@@ -15,12 +15,13 @@ Pod::Spec.new do |s|
   Vine provides a lightweight library for coordinating navigation in an iOS application.
                        DESC
 
-  s.homepage         = 'https://github.com/Adam/Vine'
+  s.homepage         = 'https://github.com/adamcumiskey/Vine'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Adam' => 'adam.cumiskey@gmail.com' }
   s.source           = { :git => 'https://github.com/Adam/Vine.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '9.3'
+  s.swift_version = '3.2'
 
   s.source_files = 'Vine/Classes/**/*'
 end
