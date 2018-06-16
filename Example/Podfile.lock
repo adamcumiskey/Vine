@@ -1,0 +1,16 @@
+PODS:
+  - Vine (0.1.0)
+
+DEPENDENCIES:
+  - Vine (from `../`)
+
+EXTERNAL SOURCES:
+  Vine:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Vine: e1fa5f70b097d8baa47f1f168a19ba28818cbedb
+
+PODFILE CHECKSUM: 1b0f1907f0d785955025aef175931130690c8830
+
+COCOAPODS: 1.5.2
