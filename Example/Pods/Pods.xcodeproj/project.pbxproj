@@ -431,7 +431,7 @@
 			};
 			name = Debug;
 		};
-		6FE90F1113807220B18A72D275CACFEC /* Debug */ = {
+		5F2698B983C881AE96F3169C95AF3A31 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D5346FD9E7F857B6E08004BA3AF6B156 /* Vine.xcconfig */;
 			buildSettings = {
@@ -455,13 +455,14 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 		70B3FCA609165471655045FCDE5C40CC /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -654,7 +655,7 @@
 			};
 			name = Release;
 		};
-		DF9CFDB505386D844A9B19569D9D7D92 /* Release */ = {
+		C960E41FE329C1E58E31656A76276081 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D5346FD9E7F857B6E08004BA3AF6B156 /* Vine.xcconfig */;
 			buildSettings = {
@@ -678,14 +679,13 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.0;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 		F2C135151C1C885DBF0414368FA0511A /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -746,8 +746,8 @@
 		7C1C6562AFC7B22B2B4196C0AB74BD38 /* Build configuration list for PBXNativeTarget "Vine" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6FE90F1113807220B18A72D275CACFEC /* Debug */,
-				DF9CFDB505386D844A9B19569D9D7D92 /* Release */,
+				C960E41FE329C1E58E31656A76276081 /* Debug */,
+				5F2698B983C881AE96F3169C95AF3A31 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

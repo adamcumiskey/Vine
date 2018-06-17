@@ -1,9 +1,9 @@
 {
   "name": "Vine",
   "version": "0.1.0",
-  "summary": "A short description of Vine.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/Adam/Vine",
+  "summary": "A library for growing applications",
+  "description": "Vine provides a lightweight library for coordinating navigation in an iOS application.",
+  "homepage": "https://github.com/adamcumiskey/Vine",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,11 +12,12 @@
     "Adam": "adam.cumiskey@gmail.com"
   },
   "source": {
-    "git": "https://github.com/Adam/Vine.git",
+    "git": "https://github.com/adamcumiskey/Vine.git",
     "tag": "0.1.0"
   },
   "platforms": {
     "ios": "9.3"
   },
+  "swift_version": "3.2",
   "source_files": "Vine/Classes/**/*"
 }
