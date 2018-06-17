@@ -21,6 +21,10 @@ public protocol Vine: class {
 public protocol WindowType: class {
     func makeKeyAndVisible()
     var rootViewController: UIViewController? { get set }
+    
+    func snapshotView(afterScreenUpdates: Bool) -> UIView?
+    func resizableSnapshotView(from: CGRect, afterScreenUpdates: Bool, withCapInsets: UIEdgeInsets) -> UIView?
+    func drawHierarchy(in: CGRect, afterScreenUpdates: Bool) -> Bool
 }
 
 public protocol WindowVine: Vine {
