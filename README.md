@@ -7,16 +7,46 @@
 
 ## Introduction
 
-**Vine** is a library for managing navigation in iOS Applications.
-
-Vines are specialized to work with specific UIKit components.
-  - `WindowVine` can be used with the Window subclass of `UIWindow`
-  - `NavigationControllerVine` can be used with `NavigationController` subclass of `UINavigationController`
-  - `SplitViewControllerVine` can be used with `SplitViewController` subclass of `UISplitViewController`
-  - `TabBarControllerVine` can be used with `TabBarController` subclass of `UITabBarController`
-
+**Vine** is a library for managing navigation in iOS Applications based on the Coordinator pattern.
 In the **Vine** model, the UIKit components hold strong references to the Vines while the Vines have weak references
-back to their parent.
+back to their parent. This makes memory management simple and automatic.
+
+Vines are specialized to work with specific UIKit Components.
+  - `WindowVine` can be used with the `Window` subclass of `UIWindow`
+  - `NavigationControllerVine` can be used with the `NavigationController` subclass of `UINavigationController`
+  - `SplitViewControllerVine` can be used with the `SplitViewController` subclass of `UISplitViewController`
+  - `TabBarControllerVine` can be used with the `TabBarController` subclass of `UITabBarController`
+
+## Vines
+
+The Vine protocol defines just one function, `start()`. This is used to setup and configure the root
+UIKit component. It is called when the in the parent component's initializer.
+Each specialized Vine protocol adds a reference to the root component. In your implementation this
+**MUST** be stored as a weak reference otherwise a retain cycle will occur.
+
+```
+// MenuVine.swift
+
+class MenuVine: NSObject, NavigationVine {
+  weak var navigationController: NavigationControllerType?
+
+  func start() {
+    let initialVC = ViewController()
+    navigationController?.viewControllers = [initialVC]
+  }
+}
+
+// RootVine.swift
+// ...
+
+  func showMenu() {
+    let menuVine = MenuVine()
+    let menuController = NavigationController(vine: menuVine)
+    navigationController?.topViewController?.present(menuController, animated: true, completion: nil)
+  }
+
+// ...
+```
 
 ![Vine Example](images/vine_example.png)
 
