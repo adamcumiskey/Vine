@@ -9,7 +9,7 @@
 
 **Vine** is a library for managing navigation in iOS Applications based on the Coordinator pattern.
 In the **Vine** model, the UIKit components hold strong references to the Vines while the Vines have weak references
-back to their parent. This makes memory management simple and automatic.
+back to their parent. This makes memory management of Vines automatic.
 
 Vines are specialized to work with specific UIKit Components.
   - `WindowVine` can be used with the `Window` subclass of `UIWindow`
@@ -20,11 +20,12 @@ Vines are specialized to work with specific UIKit Components.
 ## Vines
 
 The Vine protocol defines just one function, `start()`. This is used to setup and configure the root
-UIKit component. It is called when the in the parent component's initializer.
-Each specialized Vine protocol adds a reference to the root component. In your implementation this
-**MUST** be stored as a weak reference otherwise a retain cycle will occur.
+UIKit component and is called immediately after that component initializes.
+Each of the specialized Vine protocols adds a reference to the root component.
+In your implementation this **MUST** be stored as a weak reference otherwise a retain cycle will occur.
+Each type is defined using a protocol in order to support unit testing.
 
-```
+```swift
 // MenuVine.swift
 
 class MenuVine: NSObject, NavigationVine {
@@ -37,17 +38,19 @@ class MenuVine: NSObject, NavigationVine {
 }
 
 // RootVine.swift
-// ...
 
-  func showMenu() {
+class RootVine: WindowVine {
+  weak var window: WindowType?
+
+  func start() {
     let menuVine = MenuVine()
     let menuController = NavigationController(vine: menuVine)
-    navigationController?.topViewController?.present(menuController, animated: true, completion: nil)
+    window?.rootViewController = menuController
   }
-
-// ...
+}
 ```
 
+// Structure of an app built with Vines
 ![Vine Example](images/vine_example.png)
 
 ## Motivation
@@ -80,9 +83,6 @@ Each **Vine** can operate independently, allowing them to modify the navigation 
 Additionally, you don't need to worry about using UIKit navigation methods directly in a view controller.
 Clean architectures are great but sometimes you just gotta dismiss a modal.
 
-## Example
-
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Installation
 
