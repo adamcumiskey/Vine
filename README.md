@@ -11,12 +11,6 @@
 In the **Vine** model, the UIKit components hold strong references to the Vines while the Vines have weak references
 back to their parent. This makes memory management of Vines automatic.
 
-Vines are specialized to work with specific UIKit Components.
-  - `WindowVine` can be used with the `Window` subclass of `UIWindow`
-  - `NavigationControllerVine` can be used with the `NavigationController` subclass of `UINavigationController`
-  - `SplitViewControllerVine` can be used with the `SplitViewController` subclass of `UISplitViewController`
-  - `TabBarControllerVine` can be used with the `TabBarController` subclass of `UITabBarController`
-
 ## Vines
 
 The Vine protocol defines just one function, `start()`. This is used to setup and configure the root
@@ -24,6 +18,12 @@ UIKit component and is called immediately after that component initializes.
 Each of the specialized Vine protocols adds a reference to the root component.
 In your implementation this **MUST** be stored as a weak reference otherwise a retain cycle will occur.
 Each type is defined using a protocol in order to support unit testing.
+
+Vines are specialized to work with specific UIKit Components.
+  - `WindowVine` can be used with the `Window` subclass of `UIWindow`
+  - `NavigationControllerVine` can be used with the `NavigationController` subclass of `UINavigationController`
+  - `SplitViewControllerVine` can be used with the `SplitViewController` subclass of `UISplitViewController`
+  - `TabBarControllerVine` can be used with the `TabBarController` subclass of `UITabBarController`
 
 ```swift
 // MenuVine.swift
@@ -77,12 +77,12 @@ The modal view controller calls `dismiss(animated:completion:)` without telling 
 ![Uncoordinated 3](images/uncoordinated_3.png)
 The modal view controller is dismissed, but the Child Coordinator still holds a reference to it.
 ![Uncoordinated 4](images/uncoordinated_4.png)
+Now both the Child Coordinator and the view controllers it references are stuck in memory until the parent deallocates.
 
-**Vine** takes the opinion that it's better to rely on the navigation hierarchy to manage memory automatically.
-Each **Vine** can operate independently, allowing them to modify the navigation stack without risk of memory leaks.
-Additionally, you don't need to worry about using UIKit navigation methods directly in a view controller.
-Clean architectures are great but sometimes you just gotta dismiss a modal.
-
+**Vine** takes the opinion that it's better to rely on the navigation hierarchy to drive memory management.
+Not only does this reduce implementation overhead, it also makes it easy to integrate Vine into existing projects.
+Creating and presenting a Vine powered view controller is the same process as presenting a normal view controller, and
+any part of your app can dismiss it without knowing out how to tear it down.
 
 ## Installation
 
