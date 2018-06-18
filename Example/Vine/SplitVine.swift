@@ -42,5 +42,4 @@ class SplitVine: NSObject, SplitViewControllerVine {
         splitViewController?.viewControllers = [tabController, mapController]
     }
     
-    
 }

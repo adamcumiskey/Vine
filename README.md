@@ -46,11 +46,12 @@ class RootVine: WindowVine {
     let menuVine = MenuVine()
     let menuController = NavigationController(vine: menuVine)
     window?.rootViewController = menuController
+    window?.makeKeyAndVisible()
   }
 }
 ```
 
-// Structure of an app built with Vines
+Example structure of an app driven by **Vine**
 ![Vine Example](images/vine_example.png)
 
 ## Motivation
