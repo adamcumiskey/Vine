@@ -7,7 +7,7 @@
 
 ## Introduction
 
-Vine is a library for managing navigation in iOS Applications.
+**Vine** is a library for managing navigation in iOS Applications.
 
 Vines are specialized to work with specific UIKit components.
   - `WindowVine` can be used with the Window subclass of `UIWindow`
@@ -15,7 +15,7 @@ Vines are specialized to work with specific UIKit components.
   - `SplitViewControllerVine` can be used with `SplitViewController` subclass of `UISplitViewController`
   - `TabBarControllerVine` can be used with `TabBarController` subclass of `UITabBarController`
 
-In the Vine model, the UIKit components hold strong references to the Vines while the Vines have weak references
+In the **Vine** model, the UIKit components hold strong references to the Vines while the Vines have weak references
 back to their parent.
 
 ![Vine Example](images/vine_example.png)
@@ -42,11 +42,11 @@ The view controller is presented from the topViewController and the child coordi
 ![Uncoordinated 2](images/uncoordinated_2.png)
 The modal view controller calls `dismiss(animated:completion:)` without telling the parent Coordinator
 ![Uncoordinated 3](images/uncoordinated_3.png)
-The modal view controller is dismissed, but the Child Coordinator is still holds a reference to it.
+The modal view controller is dismissed, but the Child Coordinator still holds a reference to it.
 ![Uncoordinated 4](images/uncoordinated_4.png)
 
-Vine takes the opinion that it's better to rely on the navigation hierarchy to manage memory automatically.
-Each Vine can operate independently, allowing them to modify the navigation stack without risk of memory leaks.
+**Vine** takes the opinion that it's better to rely on the navigation hierarchy to manage memory automatically.
+Each **Vine** can operate independently, allowing them to modify the navigation stack without risk of memory leaks.
 Additionally, you don't need to worry about using UIKit navigation methods directly in a view controller.
 Clean architectures are great but sometimes you just gotta dismiss a modal.
 
@@ -56,7 +56,7 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Installation
 
-Vine is available through [CocoaPods](https://cocoapods.org). To install
+**Vine** is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
@@ -68,4 +68,4 @@ pod 'Vine'
 Adam Cumiskey, adam.cumiskey@gmail.com
 
 ## License
-Vine is available under the MIT license. See the LICENSE file for more info.
+**Vine** is available under the MIT license. See the LICENSE file for more info.
