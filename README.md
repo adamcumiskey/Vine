@@ -35,18 +35,18 @@ just calls `dismiss(animated:completion:)` from a random view controller? If tha
 get removed until its parent is removed. If that coordinator is strongly retaining view controllers (quite common from what I've seen)
 they will also stay stuck in memory even though they are no longer on screen.
 
-A Coordinator managing UINavigationController with initial view controller
+For example, here is a Coordinator managing UINavigationController with initial view controller
 ![Uncoordinated 1](images/uncoordinated_1.png)
-View controller asks Coordinator to show a modal managed by Child Coordinator
+The view controller asks the Coordinator to show a modal managed by Child Coordinator
 ![Uncoordinated 2](images/uncoordinated_2.png)
-Modal view controller calls `dismiss(animated:completion:)` without telling parent Coordinator
+The modal view controller calls `dismiss(animated:completion:)` without telling the parent Coordinator
 ![Uncoordinated 3](images/uncoordinated_3.png)
-Child Coordinator is not removed from parent, keeping the its view controllers in memory
+The modal view controller is dismissed, but the Child Coordinator is still holds a reference to it
 ![Uncoordinated 4](images/uncoordinated_4.png)
 
 Vine takes the opinion that it's better to rely on the navigation hierarchy to manage memory automatically.
-Each Vine can operate independently, allowing them to modify the navigation stack without causing memory leaks.
-Additionally, there is no need to ban navigation convenience methods.
+Each Vine can operate independently, allowing them to modify the navigation stack without risk of memory leaks.
+Additionally, you don't need to worry about using UIKit navigation methods directly in a view controller.
 Clean architectures are great but sometimes you just gotta dismiss a modal.
 
 ## Example
