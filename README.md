@@ -35,13 +35,14 @@ just calls `dismiss(animated:completion:)` from a random view controller? If tha
 get removed until its parent is removed. If that coordinator is strongly retaining view controllers (quite common from what I've seen)
 they will also stay stuck in memory even though they are no longer on screen.
 
-For example, here is a Coordinator managing UINavigationController with initial view controller
+For example, a coordinator managing a UINavigationController stack receives a message to present a modal.
 ![Uncoordinated 1](images/uncoordinated_1.png)
-The view controller asks the Coordinator to show a modal managed by Child Coordinator
+The coordinator creates the modal view controller along with a coordinator to manage it.
+The view controller is presented from the topViewController and the child coordinator is attached to the parent.
 ![Uncoordinated 2](images/uncoordinated_2.png)
 The modal view controller calls `dismiss(animated:completion:)` without telling the parent Coordinator
 ![Uncoordinated 3](images/uncoordinated_3.png)
-The modal view controller is dismissed, but the Child Coordinator is still holds a reference to it
+The modal view controller is dismissed, but the Child Coordinator is still holds a reference to it.
 ![Uncoordinated 4](images/uncoordinated_4.png)
 
 Vine takes the opinion that it's better to rely on the navigation hierarchy to manage memory automatically.
