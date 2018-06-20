@@ -7,7 +7,7 @@
 
 ## Introduction
 
-A Vine is a child that weakly retains and controls its Root. A Root strongly retains and starts a Vine.
+A Vine is a child that weakly retains and controls its Root. 
 
 The Root type needs to
 
