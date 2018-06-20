@@ -30,7 +30,8 @@ import UIKit
 
 class MapViewController: UIViewController {
     @IBOutlet weak var mapView: MKMapView!
-    
+    weak var vine: MapVineType?
+
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -38,5 +39,6 @@ class MapViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+
     }
 }

@@ -7,57 +7,73 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0E005283A56554B90FC95DEB0E0494A6 /* Pods-Vine_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CE164637B83EB5CABC069234256A222 /* Pods-Vine_Example-dummy.m */; };
-		116B9BB64E57FABC7A9B182BFEFC54E6 /* Vine-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C440FA24BCCD66105093AF19A03416A /* Vine-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		29ACED2C465B8AFF203FE7C5975125FA /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD261E51FCF3E5876495C1905BA357E7 /* DataSource.swift */; };
 		2F95C0B5425349D3F2DD1F48140C66A7 /* Pods-VineTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 17ECEC322FA786A15CDF182A2AE69B5A /* Pods-VineTests-dummy.m */; };
-		3D222BF3036261290881C97AE64094F0 /* Vine-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 366A666DAA8C26351E4ED077275CBC48 /* Vine-dummy.m */; };
-		3E1872A49E81DEA828750A647CB2BF6D /* Vine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C3D1F740B1CFD2C063B934A0F7167F /* Vine.swift */; };
-		6207EE32A52B35FD8FDDC24C11FA25B4 /* Pods-Vine_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EC37DAF414483F6180425BD8DBFD0A61 /* Pods-Vine_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		30CD0484BA0D8FEA0DA58287167E62ED /* Vine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C3D1F740B1CFD2C063B934A0F7167F /* Vine.swift */; };
+		37A29465ACC5C8CE44303C84A5883E87 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F188A1A393C638FC397DA040FB026DD5 /* Extensions.swift */; };
+		41D8CB1974C9F4C6C77B15DB296022A7 /* BlockDataSource-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EA8A81B896D69860661A21E3B159B262 /* BlockDataSource-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		589BA467317638CCB62F8FB5A3238127 /* BlockDataSource-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DAC39237649CD60FACCD9C04003C794 /* BlockDataSource-dummy.m */; };
+		7441A210489B82A568F9D225FBA76165 /* Vine-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 366A666DAA8C26351E4ED077275CBC48 /* Vine-dummy.m */; };
+		746F4B454A11F1A7DC94D4096998874C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		7AB62B3C9E2EACA70DC7085BD937825C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9F46E808F22E2BA057378E71AD6CC7 /* ViewController.swift */; };
+		9112E6AFF5BDEC9F81DF8A65CE32AB9F /* Pods-Vine_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CE164637B83EB5CABC069234256A222 /* Pods-Vine_Example-dummy.m */; };
 		911DC10F42F540E8DF3D3AED06CCD135 /* Pods-VineTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C9D62C0774848CD645808EFD233BA93 /* Pods-VineTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D8B43AE7DF0FBA2DC85E9F6309973579 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
-		DB964744EEC82A9A1516C90C6C81598A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		DCF190E12E80990589BAEB6DC384ECA6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		E18607174BA1443877E8CD96E4827633 /* Vine-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C440FA24BCCD66105093AF19A03416A /* Vine-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E1D8D1193B832EC4D00EAE8CE31171A6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		EB6627A18367F07E98DC1454CB059C7E /* Pods-Vine_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EC37DAF414483F6180425BD8DBFD0A61 /* Pods-Vine_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F70A82E06BACC7055EE0469D91738BD6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		1612E6191947A8E422BCB6CABAAE6BEB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 72C5ED296F4F10A21FC18D0DDCD7C4AB;
+			remoteInfo = BlockDataSource;
+		};
 		222BA2AF3B1D11774BFFBC40415992EE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = FFE7D5B66714303AE3FEEF0DCA8124B8;
+			remoteGlobalIDString = 45BC61493FEBFC375DD5D65DC8CE876D;
 			remoteInfo = Vine;
 		};
-		87F245A0340754528E611425FE2C3974 /* PBXContainerItemProxy */ = {
+		CD1E360BBE00350DF0E2858EAD7A8143 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = FFE7D5B66714303AE3FEEF0DCA8124B8;
+			remoteGlobalIDString = 45BC61493FEBFC375DD5D65DC8CE876D;
 			remoteInfo = Vine;
 		};
 		EC5537A5701684C3EDC369C2941EE466 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 364857A43D042E484FA64E0AB144A332;
+			remoteGlobalIDString = C2F5838CDD81999487D7BF11D9AF69E7;
 			remoteInfo = "Pods-Vine_Example";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0F9F46E808F22E2BA057378E71AD6CC7 /* ViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = BlockDataSource/Classes/ViewController.swift; sourceTree = "<group>"; };
+		135C7A1BAAA77D3929A843F404A36918 /* BlockDataSource-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BlockDataSource-prefix.pch"; sourceTree = "<group>"; };
 		17ECEC322FA786A15CDF182A2AE69B5A /* Pods-VineTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-VineTests-dummy.m"; sourceTree = "<group>"; };
 		1BECD4406720DDEBAA0E052C8CFCB961 /* Pods-Vine_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Vine_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		23313015AB81FB270BF04D4630FBBABF /* Pods-VineTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VineTests.release.xcconfig"; sourceTree = "<group>"; };
 		366A666DAA8C26351E4ED077275CBC48 /* Vine-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Vine-dummy.m"; sourceTree = "<group>"; };
 		373ED910C28E695E1FF0F67ED4E09197 /* Pods-Vine_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Vine_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		41823687B4F2D0C9580B0756D0C94489 /* Pods_VineTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_VineTests.framework; path = "Pods-VineTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DAC39237649CD60FACCD9C04003C794 /* BlockDataSource-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BlockDataSource-dummy.m"; sourceTree = "<group>"; };
 		4D964FC7947CE1632B5C628609705B07 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		5A8DBB528F51A891E49FC720C28D3E60 /* Vine.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = Vine.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		5E76F34456D533A55415420E1B24CC46 /* Vine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Vine.framework; path = Vine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F2664D6C781041FE708BB4BED22AAA1 /* Pods-VineTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VineTests.debug.xcconfig"; sourceTree = "<group>"; };
 		62A1F35DC5720703E2DADE0C795F385E /* Vine-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Vine-prefix.pch"; sourceTree = "<group>"; };
 		68E48AC17A6AEBB7FF4095D41D2DC204 /* Pods-Vine_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Vine_Example.modulemap"; sourceTree = "<group>"; };
+		6E3010DD00761672B8786FB135E7ABED /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		72C3D1F740B1CFD2C063B934A0F7167F /* Vine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Vine.swift; path = Vine/Classes/Vine.swift; sourceTree = "<group>"; };
-		73312F8B6ECB39F5C6B64499B34CEF75 /* Pods_Vine_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Vine_Example.framework; path = "Pods-Vine_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7586966296B94B91E784EC6341971E52 /* Pods-VineTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VineTests-frameworks.sh"; sourceTree = "<group>"; };
 		75D83D1F120823BDA70662CB03421CA8 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		7C107B2F06685A19C35991FB0890B313 /* Vine.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Vine.modulemap; sourceTree = "<group>"; };
@@ -67,6 +83,7 @@
 		7F80EA40E21E65D090982F177BC235FF /* Pods-Vine_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Vine_Example-resources.sh"; sourceTree = "<group>"; };
 		8278708C934A4F726D0D2B5363A80DEE /* Pods-VineTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-VineTests.modulemap"; sourceTree = "<group>"; };
 		82D993D792A9B9588F49920B08D2837E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		87E299E8548DC27B399C4F42A3358016 /* Pods_VineTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_VineTests.framework; path = "Pods-VineTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		97ABA5A8BE5592AA1704325A01D379A3 /* Pods-Vine_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Vine_Example.release.xcconfig"; sourceTree = "<group>"; };
 		9BD2944A81A39654EE1FC43485056595 /* Pods-VineTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-VineTests-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -74,27 +91,33 @@
 		A2914E40DC5BF763FCD7B019867F8A79 /* Pods-VineTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VineTests-resources.sh"; sourceTree = "<group>"; };
 		A447B4EC05AF182475494D9DD8ACCB8A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A5983DA9C81FF07474BD15EEC9936CD8 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		CFCE31C46565E8B84E9F1C8C89904836 /* Vine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Vine.framework; path = Vine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE12E04B22D273916B11FEE6445B7F4D /* Pods_Vine_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Vine_Example.framework; path = "Pods-Vine_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5346FD9E7F857B6E08004BA3AF6B156 /* Vine.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Vine.xcconfig; sourceTree = "<group>"; };
+		D8BEC5A54616C3183ACA20B1F633ABDF /* BlockDataSource.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BlockDataSource.xcconfig; sourceTree = "<group>"; };
 		DC0CC2FB8330FF08A7C66C65685895F4 /* Pods-Vine_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Vine_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		EA8A81B896D69860661A21E3B159B262 /* BlockDataSource-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BlockDataSource-umbrella.h"; sourceTree = "<group>"; };
 		EC37DAF414483F6180425BD8DBFD0A61 /* Pods-Vine_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Vine_Example-umbrella.h"; sourceTree = "<group>"; };
+		ED3F025A7AB3C6B429053CB4F0C2AEDF /* BlockDataSource.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = BlockDataSource.framework; path = BlockDataSource.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F188A1A393C638FC397DA040FB026DD5 /* Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = BlockDataSource/Classes/Extensions.swift; sourceTree = "<group>"; };
+		F298F3EF01EDA5D74211495842FB45E2 /* BlockDataSource.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = BlockDataSource.modulemap; sourceTree = "<group>"; };
 		F9BF63F83AC0E292D766D192409DD2B2 /* Pods-Vine_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Vine_Example-frameworks.sh"; sourceTree = "<group>"; };
+		FD261E51FCF3E5876495C1905BA357E7 /* DataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DataSource.swift; path = BlockDataSource/Classes/DataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		51F0C389DBF6E05D8C6FDA3310CAC3D7 /* Frameworks */ = {
+		3E2C5DEAE618A1C310AB985FEE2D4785 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D8B43AE7DF0FBA2DC85E9F6309973579 /* Foundation.framework in Frameworks */,
+				746F4B454A11F1A7DC94D4096998874C /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6AAFEDD2CE1031BC53318AAF1C6D14DE /* Frameworks */ = {
+		48D46CEB24B5122BAAE9E6E09308E039 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB964744EEC82A9A1516C90C6C81598A /* Foundation.framework in Frameworks */,
+				E1D8D1193B832EC4D00EAE8CE31171A6 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,6 +126,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				F70A82E06BACC7055EE0469D91738BD6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80A528385DF7013F7274D6E8BC442D19 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCF190E12E80990589BAEB6DC384ECA6 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,6 +146,20 @@
 				B4AB0DCA60F91E9B4CEA7B45C02BCC87 /* Vine */,
 			);
 			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		2E4CBDA643EBAB9E47B2DFA4A385FDB7 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F298F3EF01EDA5D74211495842FB45E2 /* BlockDataSource.modulemap */,
+				D8BEC5A54616C3183ACA20B1F633ABDF /* BlockDataSource.xcconfig */,
+				3DAC39237649CD60FACCD9C04003C794 /* BlockDataSource-dummy.m */,
+				135C7A1BAAA77D3929A843F404A36918 /* BlockDataSource-prefix.pch */,
+				EA8A81B896D69860661A21E3B159B262 /* BlockDataSource-umbrella.h */,
+				6E3010DD00761672B8786FB135E7ABED /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/BlockDataSource";
 			sourceTree = "<group>";
 		};
 		501C9366C781AF3A26BB7507E8D947D5 /* Pods-Vine_Example */ = {
@@ -161,13 +206,25 @@
 			path = "Target Support Files/Pods-VineTests";
 			sourceTree = "<group>";
 		};
+		6FFB573C2E1381DDF0150C9A87287EB2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ED3F025A7AB3C6B429053CB4F0C2AEDF /* BlockDataSource.framework */,
+				AE12E04B22D273916B11FEE6445B7F4D /* Pods_Vine_Example.framework */,
+				87E299E8548DC27B399C4F42A3358016 /* Pods_VineTests.framework */,
+				5E76F34456D533A55415420E1B24CC46 /* Vine.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				1A30BC4A69AFD83DA565D2CCE0490A20 /* Development Pods */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				99F4716B8A873284DB147A43202D70AE /* Products */,
+				D51226939A1FDC09DAA752C1385FD43F /* Pods */,
+				6FFB573C2E1381DDF0150C9A87287EB2 /* Products */,
 				9D3C14F278CAC9717ABEFF23F7BB2A72 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -182,14 +239,16 @@
 			name = Pod;
 			sourceTree = "<group>";
 		};
-		99F4716B8A873284DB147A43202D70AE /* Products */ = {
+		9BB58F663898B4F7D8CCE5B06B729690 /* BlockDataSource */ = {
 			isa = PBXGroup;
 			children = (
-				73312F8B6ECB39F5C6B64499B34CEF75 /* Pods_Vine_Example.framework */,
-				41823687B4F2D0C9580B0756D0C94489 /* Pods_VineTests.framework */,
-				CFCE31C46565E8B84E9F1C8C89904836 /* Vine.framework */,
+				FD261E51FCF3E5876495C1905BA357E7 /* DataSource.swift */,
+				F188A1A393C638FC397DA040FB026DD5 /* Extensions.swift */,
+				0F9F46E808F22E2BA057378E71AD6CC7 /* ViewController.swift */,
+				2E4CBDA643EBAB9E47B2DFA4A385FDB7 /* Support Files */,
 			);
-			name = Products;
+			name = BlockDataSource;
+			path = BlockDataSource;
 			sourceTree = "<group>";
 		};
 		9D3C14F278CAC9717ABEFF23F7BB2A72 /* Targets Support Files */ = {
@@ -234,22 +293,22 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		D51226939A1FDC09DAA752C1385FD43F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9BB58F663898B4F7D8CCE5B06B729690 /* BlockDataSource */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		6A8EE149C967B6A673FCF36A382AD799 /* Headers */ = {
+		343F531C4480739F42FFA9531B070176 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				116B9BB64E57FABC7A9B182BFEFC54E6 /* Vine-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		83DAB5C88921FA1D6BCBB364945FB08F /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6207EE32A52B35FD8FDDC24C11FA25B4 /* Pods-Vine_Example-umbrella.h in Headers */,
+				41D8CB1974C9F4C6C77B15DB296022A7 /* BlockDataSource-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,25 +320,40 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A60AA37FDE18687E4C96B539283582EC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB6627A18367F07E98DC1454CB059C7E /* Pods-Vine_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE7364C4A4DB135EC7C121679DA14E72 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E18607174BA1443877E8CD96E4827633 /* Vine-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		364857A43D042E484FA64E0AB144A332 /* Pods-Vine_Example */ = {
+		45BC61493FEBFC375DD5D65DC8CE876D /* Vine */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C03A39553ABA7061E59EFF88379D1541 /* Build configuration list for PBXNativeTarget "Pods-Vine_Example" */;
+			buildConfigurationList = 8F8412E7C186B6D71C5C51B6EDD8B94B /* Build configuration list for PBXNativeTarget "Vine" */;
 			buildPhases = (
-				F2C9E1B7C81619AA6FCC3CD9B292821C /* Sources */,
-				51F0C389DBF6E05D8C6FDA3310CAC3D7 /* Frameworks */,
-				83DAB5C88921FA1D6BCBB364945FB08F /* Headers */,
+				828213F9090FAF5C0D01CD69B4727600 /* Sources */,
+				80A528385DF7013F7274D6E8BC442D19 /* Frameworks */,
+				AE7364C4A4DB135EC7C121679DA14E72 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				BDA78D5DAA17B67F9F1EFEF038896000 /* PBXTargetDependency */,
 			);
-			name = "Pods-Vine_Example";
-			productName = "Pods-Vine_Example";
-			productReference = 73312F8B6ECB39F5C6B64499B34CEF75 /* Pods_Vine_Example.framework */;
+			name = Vine;
+			productName = Vine;
+			productReference = 5E76F34456D533A55415420E1B24CC46 /* Vine.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		5637230F5C7B79C9FB95466F50742FD5 /* Pods-VineTests */ = {
@@ -298,24 +372,43 @@
 			);
 			name = "Pods-VineTests";
 			productName = "Pods-VineTests";
-			productReference = 41823687B4F2D0C9580B0756D0C94489 /* Pods_VineTests.framework */;
+			productReference = 87E299E8548DC27B399C4F42A3358016 /* Pods_VineTests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		FFE7D5B66714303AE3FEEF0DCA8124B8 /* Vine */ = {
+		72C5ED296F4F10A21FC18D0DDCD7C4AB /* BlockDataSource */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7C1C6562AFC7B22B2B4196C0AB74BD38 /* Build configuration list for PBXNativeTarget "Vine" */;
+			buildConfigurationList = CB436B33EBA0E6D00848353B54BFB5B1 /* Build configuration list for PBXNativeTarget "BlockDataSource" */;
 			buildPhases = (
-				8B97BFC6BE133CE07D3041B0A40F98F1 /* Sources */,
-				6AAFEDD2CE1031BC53318AAF1C6D14DE /* Frameworks */,
-				6A8EE149C967B6A673FCF36A382AD799 /* Headers */,
+				8591725BF6C9864B6E5DF07B8F2A5CD7 /* Sources */,
+				3E2C5DEAE618A1C310AB985FEE2D4785 /* Frameworks */,
+				343F531C4480739F42FFA9531B070176 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Vine;
-			productName = Vine;
-			productReference = CFCE31C46565E8B84E9F1C8C89904836 /* Vine.framework */;
+			name = BlockDataSource;
+			productName = BlockDataSource;
+			productReference = ED3F025A7AB3C6B429053CB4F0C2AEDF /* BlockDataSource.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C2F5838CDD81999487D7BF11D9AF69E7 /* Pods-Vine_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 61B0BC75DC720E4AAECFE8EFA7AEA751 /* Build configuration list for PBXNativeTarget "Pods-Vine_Example" */;
+			buildPhases = (
+				69E6FCE115BFDA38355F0209B2C2A5C7 /* Sources */,
+				48D46CEB24B5122BAAE9E6E09308E039 /* Frameworks */,
+				A60AA37FDE18687E4C96B539283582EC /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				577A45C412474988F9D26258D1A656E0 /* PBXTargetDependency */,
+				5AB266FA15B169E3C85588486E02B41F /* PBXTargetDependency */,
+			);
+			name = "Pods-Vine_Example";
+			productName = "Pods-Vine_Example";
+			productReference = AE12E04B22D273916B11FEE6445B7F4D /* Pods_Vine_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -335,24 +428,44 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 99F4716B8A873284DB147A43202D70AE /* Products */;
+			productRefGroup = 6FFB573C2E1381DDF0150C9A87287EB2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				364857A43D042E484FA64E0AB144A332 /* Pods-Vine_Example */,
+				72C5ED296F4F10A21FC18D0DDCD7C4AB /* BlockDataSource */,
+				C2F5838CDD81999487D7BF11D9AF69E7 /* Pods-Vine_Example */,
 				5637230F5C7B79C9FB95466F50742FD5 /* Pods-VineTests */,
-				FFE7D5B66714303AE3FEEF0DCA8124B8 /* Vine */,
+				45BC61493FEBFC375DD5D65DC8CE876D /* Vine */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		8B97BFC6BE133CE07D3041B0A40F98F1 /* Sources */ = {
+		69E6FCE115BFDA38355F0209B2C2A5C7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D222BF3036261290881C97AE64094F0 /* Vine-dummy.m in Sources */,
-				3E1872A49E81DEA828750A647CB2BF6D /* Vine.swift in Sources */,
+				9112E6AFF5BDEC9F81DF8A65CE32AB9F /* Pods-Vine_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		828213F9090FAF5C0D01CD69B4727600 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7441A210489B82A568F9D225FBA76165 /* Vine-dummy.m in Sources */,
+				30CD0484BA0D8FEA0DA58287167E62ED /* Vine.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8591725BF6C9864B6E5DF07B8F2A5CD7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				589BA467317638CCB62F8FB5A3238127 /* BlockDataSource-dummy.m in Sources */,
+				29ACED2C465B8AFF203FE7C5975125FA /* DataSource.swift in Sources */,
+				37A29465ACC5C8CE44303C84A5883E87 /* Extensions.swift in Sources */,
+				7AB62B3C9E2EACA70DC7085BD937825C /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,38 +477,69 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F2C9E1B7C81619AA6FCC3CD9B292821C /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0E005283A56554B90FC95DEB0E0494A6 /* Pods-Vine_Example-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
 		178DA1819F03BA945425A2548CE83246 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-Vine_Example";
-			target = 364857A43D042E484FA64E0AB144A332 /* Pods-Vine_Example */;
+			target = C2F5838CDD81999487D7BF11D9AF69E7 /* Pods-Vine_Example */;
 			targetProxy = EC5537A5701684C3EDC369C2941EE466 /* PBXContainerItemProxy */;
+		};
+		577A45C412474988F9D26258D1A656E0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BlockDataSource;
+			target = 72C5ED296F4F10A21FC18D0DDCD7C4AB /* BlockDataSource */;
+			targetProxy = 1612E6191947A8E422BCB6CABAAE6BEB /* PBXContainerItemProxy */;
+		};
+		5AB266FA15B169E3C85588486E02B41F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Vine;
+			target = 45BC61493FEBFC375DD5D65DC8CE876D /* Vine */;
+			targetProxy = CD1E360BBE00350DF0E2858EAD7A8143 /* PBXContainerItemProxy */;
 		};
 		B6626361CA80AE501A3D98A6DB8800B5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Vine;
-			target = FFE7D5B66714303AE3FEEF0DCA8124B8 /* Vine */;
+			target = 45BC61493FEBFC375DD5D65DC8CE876D /* Vine */;
 			targetProxy = 222BA2AF3B1D11774BFFBC40415992EE /* PBXContainerItemProxy */;
-		};
-		BDA78D5DAA17B67F9F1EFEF038896000 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Vine;
-			target = FFE7D5B66714303AE3FEEF0DCA8124B8 /* Vine */;
-			targetProxy = 87F245A0340754528E611425FE2C3974 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		143502B79C6273EC9AD26C9FB52392F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8BEC5A54616C3183ACA20B1F633ABDF /* BlockDataSource.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/BlockDataSource/BlockDataSource-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BlockDataSource/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/BlockDataSource/BlockDataSource.modulemap";
+				PRODUCT_MODULE_NAME = BlockDataSource;
+				PRODUCT_NAME = BlockDataSource;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		1F14487A150D9959FED7B8C4A78B5A58 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5F2664D6C781041FE708BB4BED22AAA1 /* Pods-VineTests.debug.xcconfig */;
@@ -431,7 +575,7 @@
 			};
 			name = Debug;
 		};
-		5F2698B983C881AE96F3169C95AF3A31 /* Release */ = {
+		7409296EAC563BB69B6B4E4011EC8756 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D5346FD9E7F857B6E08004BA3AF6B156 /* Vine.xcconfig */;
 			buildSettings = {
@@ -464,9 +608,9 @@
 			};
 			name = Release;
 		};
-		70B3FCA609165471655045FCDE5C40CC /* Debug */ = {
+		80F5E16BFA7ED53428C1CCBF3782D066 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 373ED910C28E695E1FF0F67ED4E09197 /* Pods-Vine_Example.debug.xcconfig */;
+			baseConfigurationReference = 97ABA5A8BE5592AA1704325A01D379A3 /* Pods-Vine_Example.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -491,13 +635,13 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 		8B33C5230DE4A9DFA6D8F46505DD7AF7 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -655,7 +799,7 @@
 			};
 			name = Release;
 		};
-		C960E41FE329C1E58E31656A76276081 /* Debug */ = {
+		CDFC0A9999FF2F458CA2972DB9E97F55 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D5346FD9E7F857B6E08004BA3AF6B156 /* Vine.xcconfig */;
 			buildSettings = {
@@ -687,9 +831,41 @@
 			};
 			name = Debug;
 		};
-		F2C135151C1C885DBF0414368FA0511A /* Release */ = {
+		DE347AF92954333DB5C577C38B71BF2F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 97ABA5A8BE5592AA1704325A01D379A3 /* Pods-Vine_Example.release.xcconfig */;
+			baseConfigurationReference = D8BEC5A54616C3183ACA20B1F633ABDF /* BlockDataSource.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/BlockDataSource/BlockDataSource-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BlockDataSource/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/BlockDataSource/BlockDataSource.modulemap";
+				PRODUCT_MODULE_NAME = BlockDataSource;
+				PRODUCT_NAME = BlockDataSource;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FA8FBEA930479EA8472DE26A9C8F30EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 373ED910C28E695E1FF0F67ED4E09197 /* Pods-Vine_Example.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -714,13 +890,13 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
@@ -743,20 +919,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7C1C6562AFC7B22B2B4196C0AB74BD38 /* Build configuration list for PBXNativeTarget "Vine" */ = {
+		61B0BC75DC720E4AAECFE8EFA7AEA751 /* Build configuration list for PBXNativeTarget "Pods-Vine_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C960E41FE329C1E58E31656A76276081 /* Debug */,
-				5F2698B983C881AE96F3169C95AF3A31 /* Release */,
+				FA8FBEA930479EA8472DE26A9C8F30EA /* Debug */,
+				80F5E16BFA7ED53428C1CCBF3782D066 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C03A39553ABA7061E59EFF88379D1541 /* Build configuration list for PBXNativeTarget "Pods-Vine_Example" */ = {
+		8F8412E7C186B6D71C5C51B6EDD8B94B /* Build configuration list for PBXNativeTarget "Vine" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				70B3FCA609165471655045FCDE5C40CC /* Debug */,
-				F2C135151C1C885DBF0414368FA0511A /* Release */,
+				CDFC0A9999FF2F458CA2972DB9E97F55 /* Debug */,
+				7409296EAC563BB69B6B4E4011EC8756 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB436B33EBA0E6D00848353B54BFB5B1 /* Build configuration list for PBXNativeTarget "BlockDataSource" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE347AF92954333DB5C577C38B71BF2F /* Debug */,
+				143502B79C6273EC9AD26C9FB52392F1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
