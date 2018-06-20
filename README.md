@@ -7,11 +7,14 @@
 
 ## Introduction
 
+A Vine is a child that weakly retains and controls its Root. A Root strongly retains and starts a Vine.
+
 The Root type needs to
+
     1. Strongly retain the Vine
     1. Assign `vine.root = self` in the initializer
     1. Call `vine.start()` after the Root has finished initializing
-    
+
 When creating a Vine, the `init(start: StartFunction?)` can be used to pass in a closure that will get executed when `start()` is called.
 This should be sufficient for most cases where only some initial bootstrapping logic needs to occur.
 If you need a more advanced Vine
