@@ -42,17 +42,17 @@ public protocol VineType: class {
  back up to the parent. You can attach a Vine to any kind of object you want.
 */
 open class Vine<Root: AnyObject>: VineType {
-    public typealias StartBlock = ((Vine<Root>) -> Void)
+    public typealias StartFunction = ((Vine<Root>) -> Void)
 
     public weak var root: Root?
-    private var startFn: StartBlock?
+    private var startFunction: StartFunction?
 
-    public init(start: StartBlock?) {
-        self.startFn = start
+    public init(start: StartFunction?) {
+        self.startFunction = start
     }
 
     open func start() {
-        startFn?(self)
+        startFunction?(self)
     }
 }
 

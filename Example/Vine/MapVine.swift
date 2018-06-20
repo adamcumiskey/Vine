@@ -15,7 +15,7 @@ protocol MapVineType: class {
 
 class MapVine: Vine<NavigationController>, MapVineType {
     func showPlacemark(placemark: CLPlacemark) {
-        let controller = NavigationController(vine: .placemarkVine(placemark))
+        let controller = NavigationController(vine: .placemarkVine(placemark: placemark))
         self.root?.present(controller, animated: true, completion: nil)
     }
 }
