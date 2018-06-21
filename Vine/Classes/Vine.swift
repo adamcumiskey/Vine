@@ -85,7 +85,7 @@ public class NavigationController: UINavigationController {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
     }
 
-    public init(navigationBarClass: AnyClass? = nil, toolbarClass: AnyClass? = nil, vine: VineType) {
+    public init(vine: VineType, navigationBarClass: AnyClass? = nil, toolbarClass: AnyClass? = nil) {
         super.init(navigationBarClass: navigationBarClass, toolbarClass: toolbarClass)
         self.vine = vine
         self.vine?.root = self
