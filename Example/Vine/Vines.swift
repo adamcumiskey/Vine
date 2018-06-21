@@ -58,18 +58,15 @@ extension Vine {
     class func menuVine(embeddedInSplitView: Bool) -> Vine<TabBarController> {
         return Vine<TabBarController> { vine in
             var viewControllers = [UIViewController]()
-
             // Add the Map as a tab if we're not in a SplitView environment
             if !embeddedInSplitView {
                 let mapController = NavigationController(vine: .mapVine)
                 mapController.tabBarItem = UITabBarItem(title: "Map", image: nil, selectedImage: nil)
                 viewControllers.append(mapController)
             }
-
             let contentController = NavigationController(vine: .contentVine)
             contentController.tabBarItem = UITabBarItem(title: "Content", image: nil, selectedImage: nil)
             viewControllers.append(contentController)
-
             vine.root?.viewControllers = viewControllers
         }
     }
