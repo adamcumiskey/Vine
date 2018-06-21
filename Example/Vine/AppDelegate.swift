@@ -32,11 +32,9 @@ import Vine
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: Window?
-    
+
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
-        self.window = Window(frame: UIScreen.main.bounds, vine: AppVine())
+        self.window = Window(frame: UIScreen.main.bounds, vine: .appVine)
         return true
     }
 }
-

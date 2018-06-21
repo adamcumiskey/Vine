@@ -7,58 +7,26 @@
 
 ## Introduction
 
-**Vine** is a library for managing navigation in iOS Applications based on the Coordinator pattern.
-In the **Vine** model, the UIKit components hold strong references to the Vines while the Vines have weak references
-back to their parent. This makes memory management of Vines automatic.
+A Vine is a child that weakly retains and controls its Root. 
 
-## Vines
+The Root type needs to
 
-The Vine protocol defines just one function, `start()`. This is used to setup and configure the root
-UIKit component and is called immediately after that component initializes.
-Each of the specialized Vine protocols adds a reference to the root component.
-In your implementation this **MUST** be stored as a weak reference otherwise a retain cycle will occur.
-Each type is defined using a protocol in order to support unit testing.
+  1. Strongly retain the Vine
+  1. Assign `vine.root = self` in the initializer
+  1. Call `vine.start()` after the Root has finished initializing
 
-Vines are specialized to work with specific UIKit Components.
-  - `WindowVine` can be used with the `Window` subclass of `UIWindow`
-  - `NavigationControllerVine` can be used with the `NavigationController` subclass of `UINavigationController`
-  - `SplitViewControllerVine` can be used with the `SplitViewController` subclass of `UISplitViewController`
-  - `TabBarControllerVine` can be used with the `TabBarController` subclass of `UITabBarController`
+When creating a Vine, the `init(start: StartFunction?)` can be used to pass in a closure that will get executed when `start()` is called.
+This should be sufficient for most cases where only some initial bootstrapping logic needs to occur.
+If you need a more advanced Vine
 
-```swift
-// MenuVine.swift
-
-class MenuVine: NSObject, NavigationVine {
-  weak var navigationController: NavigationControllerType?
-
-  func start() {
-    let initialVC = ViewController()
-    navigationController?.viewControllers = [initialVC]
-  }
-}
-
-// RootVine.swift
-
-class RootVine: WindowVine {
-  weak var window: WindowType?
-
-  func start() {
-    let menuVine = MenuVine()
-    let menuController = NavigationController(vine: menuVine)
-    window?.rootViewController = menuController
-    window?.makeKeyAndVisible()
-  }
-}
-```
-
-Example structure of an app driven by **Vine**
+Vines are especially useful as an alternative to the Coordinator pattern for managing navigation.
 ![Vine Example](images/vine_example.png)
 
 ## Motivation
 
 Removing navigation logic from view controllers is a good way to separate concerns and increase testability.
 The [Coordinator](http://khanlou.com/2015/10/coordinators-redux/) pattern has been written about extensively,
-and is widely accepted. However I believe this pattern causes significant memory management overhead and makes
+and is widely accepted. However this pattern causes significant memory management overhead and makes
 it dangerous to use UIKit navigation methods directly.
 
 Coordinators store a reference to a root UIKit object and an array of child coordinators. When adding a new view controller
@@ -78,12 +46,14 @@ The modal view controller calls `dismiss(animated:completion:)` without telling 
 ![Uncoordinated 3](images/uncoordinated_3.png)
 The modal view controller is dismissed, but the Child Coordinator still holds a reference to it.
 ![Uncoordinated 4](images/uncoordinated_4.png)
-Now both the Child Coordinator and the view controllers it references are stuck in memory until the parent deallocates.
+Both the child coordinator and any view controllers strongly referenced are now leaked.
 
-**Vine** takes the opinion that it's better to rely on the navigation hierarchy to drive memory management.
-Not only does this reduce implementation overhead, it also makes it easy to integrate Vine into existing projects.
-Creating and presenting a Vine powered view controller is the same process as presenting a normal view controller, and
-any part of your app can dismiss it without knowing out how to tear it down.
+Creating a separate object graph for navigation logic introduces the overhead of maintaining parity with the UI tree, 
+and failure to do so results in memory leaks. This bookkeeping is often tedious, error prone, and results in a web of
+dependencies. Vines allow you to safely call any UIKit navigation method from any Vine without causing a memory leak.
+For example, if a Vine was powering a model UINavigationController with a few view controllers on the stack, it is safe to call
+`self.dismiss(animated:completion:)` from any of the view controllers.
+For this reason **Vine** takes the opinion that it's better to rely on view lifecycle for memory management in UI applications.
 
 ## Installation
 
