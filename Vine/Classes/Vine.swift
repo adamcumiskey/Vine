@@ -47,7 +47,7 @@ open class Vine<Root: AnyObject>: VineType {
     public weak var root: Root?
     private var startFunction: StartFunction?
 
-    public init(start: StartFunction?) {
+    public init(start: StartFunction? = nil) {
         self.startFunction = start
     }
 
