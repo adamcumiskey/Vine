@@ -18,47 +18,26 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //  THE SOFTWARE.
 //
-//  Mocks.swift
-//  VineTests
+//  Window.swift
+//  Vine
 //
-//  Created by Adam on 6/16/18.
-//  Copyright © 2018 CocoaPods. All rights reserved.
+//  Created by Adam on 9/10/18.
 //
 
-import Vine
+import UIKit
 
-class MockWindowVine: NSObject, WindowVine {
-    weak var window: WindowType?
-    
-    var didStart = false
-    func start() {
-        didStart = true
+public class Window: UIWindow {
+    /// Reference to the Vine
+    var vine: Vine<Window>
+
+    public init(frame: CGRect, vine: Vine<Window>) {
+        self.vine = vine
+        super.init(frame: frame)
+        self.vine.root = self
+        self.vine.start()
     }
-}
 
-class MockNavigationControllerVine: NSObject, NavigationControllerVine {
-    weak var navigationController: NavigationControllerType?
-    
-    var didStart = false
-    func start() {
-        didStart = true
-    }
-}
-
-class MockSplitViewControllerVine: NSObject, SplitViewControllerVine {
-    weak var splitViewController: SplitViewControllerType?
-    
-    var didStart = false
-    func start() {
-        didStart = true
-    }
-}
-
-class MockTabBarControllerVine: NSObject, TabBarControllerVine {
-    weak var tabBarController: TabBarControllerType?
-    
-    var didStart = false
-    func start() {
-        didStart = true
+    public required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
     }
 }

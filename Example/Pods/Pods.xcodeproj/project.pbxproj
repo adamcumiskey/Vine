@@ -13,11 +13,10 @@
 		37A29465ACC5C8CE44303C84A5883E87 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F188A1A393C638FC397DA040FB026DD5 /* Extensions.swift */; };
 		41D8CB1974C9F4C6C77B15DB296022A7 /* BlockDataSource-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EA8A81B896D69860661A21E3B159B262 /* BlockDataSource-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		589BA467317638CCB62F8FB5A3238127 /* BlockDataSource-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DAC39237649CD60FACCD9C04003C794 /* BlockDataSource-dummy.m */; };
-		6676C30421474BAD00AA7FA2 /* Window.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6676C2FC21474B4F00AA7FA2 /* Window.swift */; };
-		6676C30521474BB500AA7FA2 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6676C2FE21474B5900AA7FA2 /* NavigationController.swift */; };
-		6676C30621474BB900AA7FA2 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6676C30221474B6900AA7FA2 /* TabBarController.swift */; };
-		6676C30721474BBD00AA7FA2 /* SplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6676C30021474B6100AA7FA2 /* SplitViewController.swift */; };
-		6676C30B2147502C00AA7FA2 /* UIViewController+Vine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6676C30A2147502C00AA7FA2 /* UIViewController+Vine.swift */; };
+		66078AD12148ABD9004F85D6 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66078ACD2148ABD9004F85D6 /* NavigationController.swift */; };
+		66078AD22148ABD9004F85D6 /* SplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66078ACE2148ABD9004F85D6 /* SplitViewController.swift */; };
+		66078AD32148ABD9004F85D6 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66078ACF2148ABD9004F85D6 /* TabBarController.swift */; };
+		66078AD42148ABD9004F85D6 /* Window.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66078AD02148ABD9004F85D6 /* Window.swift */; };
 		7441A210489B82A568F9D225FBA76165 /* Vine-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 366A666DAA8C26351E4ED077275CBC48 /* Vine-dummy.m */; };
 		746F4B454A11F1A7DC94D4096998874C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
 		7AB62B3C9E2EACA70DC7085BD937825C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9F46E808F22E2BA057378E71AD6CC7 /* ViewController.swift */; };
@@ -76,11 +75,10 @@
 		5E76F34456D533A55415420E1B24CC46 /* Vine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Vine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F2664D6C781041FE708BB4BED22AAA1 /* Pods-VineTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VineTests.debug.xcconfig"; sourceTree = "<group>"; };
 		62A1F35DC5720703E2DADE0C795F385E /* Vine-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Vine-prefix.pch"; sourceTree = "<group>"; };
-		6676C2FC21474B4F00AA7FA2 /* Window.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Window.swift; sourceTree = "<group>"; };
-		6676C2FE21474B5900AA7FA2 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
-		6676C30021474B6100AA7FA2 /* SplitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitViewController.swift; sourceTree = "<group>"; };
-		6676C30221474B6900AA7FA2 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
-		6676C30A2147502C00AA7FA2 /* UIViewController+Vine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Vine.swift"; sourceTree = "<group>"; };
+		66078ACD2148ABD9004F85D6 /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NavigationController.swift; path = Vine/Classes/NavigationController.swift; sourceTree = "<group>"; };
+		66078ACE2148ABD9004F85D6 /* SplitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SplitViewController.swift; path = Vine/Classes/SplitViewController.swift; sourceTree = "<group>"; };
+		66078ACF2148ABD9004F85D6 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TabBarController.swift; path = Vine/Classes/TabBarController.swift; sourceTree = "<group>"; };
+		66078AD02148ABD9004F85D6 /* Window.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Window.swift; path = Vine/Classes/Window.swift; sourceTree = "<group>"; };
 		68E48AC17A6AEBB7FF4095D41D2DC204 /* Pods-Vine_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Vine_Example.modulemap"; sourceTree = "<group>"; };
 		6E3010DD00761672B8786FB135E7ABED /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		72C3D1F740B1CFD2C063B934A0F7167F /* Vine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Vine.swift; path = Vine/Classes/Vine.swift; sourceTree = "<group>"; };
@@ -286,13 +284,12 @@
 		B4AB0DCA60F91E9B4CEA7B45C02BCC87 /* Vine */ = {
 			isa = PBXGroup;
 			children = (
-				72C3D1F740B1CFD2C063B934A0F7167F /* Vine.swift */,
-				6676C2FC21474B4F00AA7FA2 /* Window.swift */,
-				6676C30A2147502C00AA7FA2 /* UIViewController+Vine.swift */,
-				6676C2FE21474B5900AA7FA2 /* NavigationController.swift */,
-				6676C30021474B6100AA7FA2 /* SplitViewController.swift */,
-				6676C30221474B6900AA7FA2 /* TabBarController.swift */,
+				66078ACD2148ABD9004F85D6 /* NavigationController.swift */,
 				92B2CA5B759C97651358DAD844C0E704 /* Pod */,
+				66078ACE2148ABD9004F85D6 /* SplitViewController.swift */,
+				66078ACF2148ABD9004F85D6 /* TabBarController.swift */,
+				72C3D1F740B1CFD2C063B934A0F7167F /* Vine.swift */,
+				66078AD02148ABD9004F85D6 /* Window.swift */,
 				B43CAB5CBDBE7ADC9C5BE27C935627C9 /* Support Files */,
 			);
 			name = Vine;
@@ -467,13 +464,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6676C30B2147502C00AA7FA2 /* UIViewController+Vine.swift in Sources */,
 				7441A210489B82A568F9D225FBA76165 /* Vine-dummy.m in Sources */,
-				6676C30521474BB500AA7FA2 /* NavigationController.swift in Sources */,
 				30CD0484BA0D8FEA0DA58287167E62ED /* Vine.swift in Sources */,
-				6676C30621474BB900AA7FA2 /* TabBarController.swift in Sources */,
-				6676C30421474BAD00AA7FA2 /* Window.swift in Sources */,
-				6676C30721474BBD00AA7FA2 /* SplitViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -483,8 +475,12 @@
 			files = (
 				589BA467317638CCB62F8FB5A3238127 /* BlockDataSource-dummy.m in Sources */,
 				29ACED2C465B8AFF203FE7C5975125FA /* DataSource.swift in Sources */,
+				66078AD12148ABD9004F85D6 /* NavigationController.swift in Sources */,
 				37A29465ACC5C8CE44303C84A5883E87 /* Extensions.swift in Sources */,
+				66078AD32148ABD9004F85D6 /* TabBarController.swift in Sources */,
 				7AB62B3C9E2EACA70DC7085BD937825C /* ViewController.swift in Sources */,
+				66078AD22148ABD9004F85D6 /* SplitViewController.swift in Sources */,
+				66078AD42148ABD9004F85D6 /* Window.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
