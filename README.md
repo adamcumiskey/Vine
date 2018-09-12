@@ -1,6 +1,6 @@
 # Vine
 
-[![CI Status](https://img.shields.io/travis/Adam/Vine.svg?style=flat)](https://travis-ci.org/Adam/Vine)
+[![CI Status](https://app.bitrise.io/app/7cea0a462707f9a9/status.svg?token=0HIQHr9D87WiO67D6iOvAQ)](https://app.bitrise.io/app/7cea0a462707f9a9#)
 [![Version](https://img.shields.io/cocoapods/v/Vine.svg?style=flat)](https://cocoapods.org/pods/Vine)
 [![License](https://img.shields.io/cocoapods/l/Vine.svg?style=flat)](https://cocoapods.org/pods/Vine)
 [![Platform](https://img.shields.io/cocoapods/p/Vine.svg?style=flat)](https://cocoapods.org/pods/Vine)
