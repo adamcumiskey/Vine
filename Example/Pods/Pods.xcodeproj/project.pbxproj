@@ -13,6 +13,10 @@
 		37A29465ACC5C8CE44303C84A5883E87 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F188A1A393C638FC397DA040FB026DD5 /* Extensions.swift */; };
 		41D8CB1974C9F4C6C77B15DB296022A7 /* BlockDataSource-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EA8A81B896D69860661A21E3B159B262 /* BlockDataSource-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		589BA467317638CCB62F8FB5A3238127 /* BlockDataSource-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DAC39237649CD60FACCD9C04003C794 /* BlockDataSource-dummy.m */; };
+		66078AD12148ABD9004F85D6 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66078ACD2148ABD9004F85D6 /* NavigationController.swift */; };
+		66078AD22148ABD9004F85D6 /* SplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66078ACE2148ABD9004F85D6 /* SplitViewController.swift */; };
+		66078AD32148ABD9004F85D6 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66078ACF2148ABD9004F85D6 /* TabBarController.swift */; };
+		66078AD42148ABD9004F85D6 /* Window.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66078AD02148ABD9004F85D6 /* Window.swift */; };
 		7441A210489B82A568F9D225FBA76165 /* Vine-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 366A666DAA8C26351E4ED077275CBC48 /* Vine-dummy.m */; };
 		746F4B454A11F1A7DC94D4096998874C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
 		7AB62B3C9E2EACA70DC7085BD937825C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9F46E808F22E2BA057378E71AD6CC7 /* ViewController.swift */; };
@@ -67,15 +71,19 @@
 		3DAC39237649CD60FACCD9C04003C794 /* BlockDataSource-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BlockDataSource-dummy.m"; sourceTree = "<group>"; };
 		4D964FC7947CE1632B5C628609705B07 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		5A8DBB528F51A891E49FC720C28D3E60 /* Vine.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = Vine.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		5E76F34456D533A55415420E1B24CC46 /* Vine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Vine.framework; path = Vine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A8DBB528F51A891E49FC720C28D3E60 /* Vine.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = Vine.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		5E76F34456D533A55415420E1B24CC46 /* Vine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Vine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F2664D6C781041FE708BB4BED22AAA1 /* Pods-VineTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VineTests.debug.xcconfig"; sourceTree = "<group>"; };
 		62A1F35DC5720703E2DADE0C795F385E /* Vine-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Vine-prefix.pch"; sourceTree = "<group>"; };
+		66078ACD2148ABD9004F85D6 /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NavigationController.swift; path = Vine/Classes/NavigationController.swift; sourceTree = "<group>"; };
+		66078ACE2148ABD9004F85D6 /* SplitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SplitViewController.swift; path = Vine/Classes/SplitViewController.swift; sourceTree = "<group>"; };
+		66078ACF2148ABD9004F85D6 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TabBarController.swift; path = Vine/Classes/TabBarController.swift; sourceTree = "<group>"; };
+		66078AD02148ABD9004F85D6 /* Window.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Window.swift; path = Vine/Classes/Window.swift; sourceTree = "<group>"; };
 		68E48AC17A6AEBB7FF4095D41D2DC204 /* Pods-Vine_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Vine_Example.modulemap"; sourceTree = "<group>"; };
 		6E3010DD00761672B8786FB135E7ABED /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		72C3D1F740B1CFD2C063B934A0F7167F /* Vine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Vine.swift; path = Vine/Classes/Vine.swift; sourceTree = "<group>"; };
 		7586966296B94B91E784EC6341971E52 /* Pods-VineTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VineTests-frameworks.sh"; sourceTree = "<group>"; };
-		75D83D1F120823BDA70662CB03421CA8 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		75D83D1F120823BDA70662CB03421CA8 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		7C107B2F06685A19C35991FB0890B313 /* Vine.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Vine.modulemap; sourceTree = "<group>"; };
 		7C440FA24BCCD66105093AF19A03416A /* Vine-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Vine-umbrella.h"; sourceTree = "<group>"; };
 		7CE164637B83EB5CABC069234256A222 /* Pods-Vine_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Vine_Example-dummy.m"; sourceTree = "<group>"; };
@@ -83,21 +91,21 @@
 		7F80EA40E21E65D090982F177BC235FF /* Pods-Vine_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Vine_Example-resources.sh"; sourceTree = "<group>"; };
 		8278708C934A4F726D0D2B5363A80DEE /* Pods-VineTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-VineTests.modulemap"; sourceTree = "<group>"; };
 		82D993D792A9B9588F49920B08D2837E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		87E299E8548DC27B399C4F42A3358016 /* Pods_VineTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_VineTests.framework; path = "Pods-VineTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		87E299E8548DC27B399C4F42A3358016 /* Pods_VineTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VineTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		97ABA5A8BE5592AA1704325A01D379A3 /* Pods-Vine_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Vine_Example.release.xcconfig"; sourceTree = "<group>"; };
 		9BD2944A81A39654EE1FC43485056595 /* Pods-VineTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-VineTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		9C9D62C0774848CD645808EFD233BA93 /* Pods-VineTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-VineTests-umbrella.h"; sourceTree = "<group>"; };
 		A2914E40DC5BF763FCD7B019867F8A79 /* Pods-VineTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VineTests-resources.sh"; sourceTree = "<group>"; };
 		A447B4EC05AF182475494D9DD8ACCB8A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A5983DA9C81FF07474BD15EEC9936CD8 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		AE12E04B22D273916B11FEE6445B7F4D /* Pods_Vine_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Vine_Example.framework; path = "Pods-Vine_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5983DA9C81FF07474BD15EEC9936CD8 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		AE12E04B22D273916B11FEE6445B7F4D /* Pods_Vine_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Vine_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5346FD9E7F857B6E08004BA3AF6B156 /* Vine.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Vine.xcconfig; sourceTree = "<group>"; };
 		D8BEC5A54616C3183ACA20B1F633ABDF /* BlockDataSource.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BlockDataSource.xcconfig; sourceTree = "<group>"; };
 		DC0CC2FB8330FF08A7C66C65685895F4 /* Pods-Vine_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Vine_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		EA8A81B896D69860661A21E3B159B262 /* BlockDataSource-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BlockDataSource-umbrella.h"; sourceTree = "<group>"; };
 		EC37DAF414483F6180425BD8DBFD0A61 /* Pods-Vine_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Vine_Example-umbrella.h"; sourceTree = "<group>"; };
-		ED3F025A7AB3C6B429053CB4F0C2AEDF /* BlockDataSource.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = BlockDataSource.framework; path = BlockDataSource.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED3F025A7AB3C6B429053CB4F0C2AEDF /* BlockDataSource.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BlockDataSource.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F188A1A393C638FC397DA040FB026DD5 /* Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = BlockDataSource/Classes/Extensions.swift; sourceTree = "<group>"; };
 		F298F3EF01EDA5D74211495842FB45E2 /* BlockDataSource.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = BlockDataSource.modulemap; sourceTree = "<group>"; };
 		F9BF63F83AC0E292D766D192409DD2B2 /* Pods-Vine_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Vine_Example-frameworks.sh"; sourceTree = "<group>"; };
@@ -247,7 +255,6 @@
 				0F9F46E808F22E2BA057378E71AD6CC7 /* ViewController.swift */,
 				2E4CBDA643EBAB9E47B2DFA4A385FDB7 /* Support Files */,
 			);
-			name = BlockDataSource;
 			path = BlockDataSource;
 			sourceTree = "<group>";
 		};
@@ -277,8 +284,12 @@
 		B4AB0DCA60F91E9B4CEA7B45C02BCC87 /* Vine */ = {
 			isa = PBXGroup;
 			children = (
-				72C3D1F740B1CFD2C063B934A0F7167F /* Vine.swift */,
+				66078ACD2148ABD9004F85D6 /* NavigationController.swift */,
 				92B2CA5B759C97651358DAD844C0E704 /* Pod */,
+				66078ACE2148ABD9004F85D6 /* SplitViewController.swift */,
+				66078ACF2148ABD9004F85D6 /* TabBarController.swift */,
+				72C3D1F740B1CFD2C063B934A0F7167F /* Vine.swift */,
+				66078AD02148ABD9004F85D6 /* Window.swift */,
 				B43CAB5CBDBE7ADC9C5BE27C935627C9 /* Support Files */,
 			);
 			name = Vine;
@@ -464,8 +475,12 @@
 			files = (
 				589BA467317638CCB62F8FB5A3238127 /* BlockDataSource-dummy.m in Sources */,
 				29ACED2C465B8AFF203FE7C5975125FA /* DataSource.swift in Sources */,
+				66078AD12148ABD9004F85D6 /* NavigationController.swift in Sources */,
 				37A29465ACC5C8CE44303C84A5883E87 /* Extensions.swift in Sources */,
+				66078AD32148ABD9004F85D6 /* TabBarController.swift in Sources */,
 				7AB62B3C9E2EACA70DC7085BD937825C /* ViewController.swift in Sources */,
+				66078AD22148ABD9004F85D6 /* SplitViewController.swift in Sources */,
+				66078AD42148ABD9004F85D6 /* Window.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
