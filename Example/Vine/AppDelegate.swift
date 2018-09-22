@@ -31,10 +31,11 @@ import Vine
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-    var window: Window?
+    var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        self.window = Window(frame: UIScreen.main.bounds, vine: .appVine)
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        self.window?.vine = .appVine
         return true
     }
 }

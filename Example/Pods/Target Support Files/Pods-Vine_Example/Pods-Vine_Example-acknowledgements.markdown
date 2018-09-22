@@ -1,7 +1,7 @@
 # Acknowledgements
 This application makes use of the following third party libraries:
 
-## BlockDataSource
+## Sorcery
 
 The MIT License (MIT)
 

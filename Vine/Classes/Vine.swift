@@ -27,18 +27,10 @@
 
 import UIKit
 
-public protocol VineType: class {
-    /// Attach to root
-    func start()
-}
-
 /// A Vine is an object that holds a weak reference to a Root.
-/// This root
 ///
-/// While this library includes utilities for working with UIKit navigation, Vine
-/// provides a convenient pattern for handing control from a parent object to a child
-/// where the child will be released from memory with the parent.
-open class Vine<Root: AnyObject>: VineType {
+/// This object can be used by the Root to reliquish control after initialization.
+open class Vine<Root: AnyObject> {
     public typealias StartFunction = ((Vine<Root>) -> Void)
 
     /// The Root object that starts this Vine
@@ -55,12 +47,10 @@ open class Vine<Root: AnyObject>: VineType {
 
     /// Start the Vine
     ///
-    /// In this method, you should configure the `root` object
-    /// and bootstrap the initial view controller(s).
-    ///
     /// By default, this function calls the `start` block that was passed in the initializer.
     /// When subclassing this method, `super` should be called at the very beginning of this function.
     open func start() {
         startFunction?(self)
     }
 }
+

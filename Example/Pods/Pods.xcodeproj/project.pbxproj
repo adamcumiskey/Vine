@@ -7,125 +7,113 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		29ACED2C465B8AFF203FE7C5975125FA /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD261E51FCF3E5876495C1905BA357E7 /* DataSource.swift */; };
+		0AF11851A4404E07AC1DA54AEDF3963C /* Vine-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0295EAAA044894234280E5C24A7B143C /* Vine-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1721DD2880C477AC6F2FB45F3B82455C /* Sorcery-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DB7FFFA374FE4F7F3B61DE009A50F0F9 /* Sorcery-dummy.m */; };
 		2F95C0B5425349D3F2DD1F48140C66A7 /* Pods-VineTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 17ECEC322FA786A15CDF182A2AE69B5A /* Pods-VineTests-dummy.m */; };
-		30CD0484BA0D8FEA0DA58287167E62ED /* Vine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C3D1F740B1CFD2C063B934A0F7167F /* Vine.swift */; };
-		37A29465ACC5C8CE44303C84A5883E87 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F188A1A393C638FC397DA040FB026DD5 /* Extensions.swift */; };
-		41D8CB1974C9F4C6C77B15DB296022A7 /* BlockDataSource-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EA8A81B896D69860661A21E3B159B262 /* BlockDataSource-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		589BA467317638CCB62F8FB5A3238127 /* BlockDataSource-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DAC39237649CD60FACCD9C04003C794 /* BlockDataSource-dummy.m */; };
-		66078AD12148ABD9004F85D6 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66078ACD2148ABD9004F85D6 /* NavigationController.swift */; };
-		66078AD22148ABD9004F85D6 /* SplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66078ACE2148ABD9004F85D6 /* SplitViewController.swift */; };
-		66078AD32148ABD9004F85D6 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66078ACF2148ABD9004F85D6 /* TabBarController.swift */; };
-		66078AD42148ABD9004F85D6 /* Window.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66078AD02148ABD9004F85D6 /* Window.swift */; };
-		7441A210489B82A568F9D225FBA76165 /* Vine-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 366A666DAA8C26351E4ED077275CBC48 /* Vine-dummy.m */; };
-		746F4B454A11F1A7DC94D4096998874C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
-		7AB62B3C9E2EACA70DC7085BD937825C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9F46E808F22E2BA057378E71AD6CC7 /* ViewController.swift */; };
-		9112E6AFF5BDEC9F81DF8A65CE32AB9F /* Pods-Vine_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CE164637B83EB5CABC069234256A222 /* Pods-Vine_Example-dummy.m */; };
+		48988EA1F85495E47813EFB302AFA3A2 /* Vine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD5BED5C7B0746C6A7F8C5C30C3572E /* Vine.swift */; };
+		61CA92B8AD06D2B3FD2B0C60BD4A439D /* Sorcery-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 844B3604E471F6061456D3ECECD4AB6D /* Sorcery-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		66551FFF2156AC5D00D9FAC6 /* Vine+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66551FFD2156AC4300D9FAC6 /* Vine+UIKit.swift */; };
+		665520022156AC7500D9FAC6 /* Root.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665520002156AC7200D9FAC6 /* Root.swift */; };
+		7C4A9B13F0F94555BB9A575A34B356A7 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B074BD375933697B72A631576ABBCF /* DataSource.swift */; };
 		911DC10F42F540E8DF3D3AED06CCD135 /* Pods-VineTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C9D62C0774848CD645808EFD233BA93 /* Pods-VineTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DCF190E12E80990589BAEB6DC384ECA6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
-		E18607174BA1443877E8CD96E4827633 /* Vine-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C440FA24BCCD66105093AF19A03416A /* Vine-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E1D8D1193B832EC4D00EAE8CE31171A6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
-		EB6627A18367F07E98DC1454CB059C7E /* Pods-Vine_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EC37DAF414483F6180425BD8DBFD0A61 /* Pods-Vine_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A5F58B345E07D1C264B9DC6F414F0C6F /* Pods-Vine_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EC37DAF414483F6180425BD8DBFD0A61 /* Pods-Vine_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CBAE0879D7F57A1AF1BB45FC832BBEEC /* Vine-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 07812269E39FF1F32933A5AA23E15994 /* Vine-dummy.m */; };
+		CD2C681E1B172ED71FC371292633FD42 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		D6335121ADD0ECA775C1FDEA927015AF /* Middleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC47BA164730E4F054029B961560D4D /* Middleware.swift */; };
+		D7697B9C47205DEE8727FB2FA333AEAC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		E6985CEED738EDE142027E10822E183E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		F33550B52C62561D04C195EFFAF1626A /* ViewControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FFBB4F5BA923399B18CDECB32765BC /* ViewControllers.swift */; };
 		F70A82E06BACC7055EE0469D91738BD6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		F97AD4B51D4225C59D050C5FB2D9155F /* Pods-Vine_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CE164637B83EB5CABC069234256A222 /* Pods-Vine_Example-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		1612E6191947A8E422BCB6CABAAE6BEB /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 72C5ED296F4F10A21FC18D0DDCD7C4AB;
-			remoteInfo = BlockDataSource;
-		};
 		222BA2AF3B1D11774BFFBC40415992EE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 45BC61493FEBFC375DD5D65DC8CE876D;
+			remoteGlobalIDString = 00366FC39E0A55C1916D9689768352D6;
 			remoteInfo = Vine;
 		};
-		CD1E360BBE00350DF0E2858EAD7A8143 /* PBXContainerItemProxy */ = {
+		6E8FAA11C554D27CDE3CED495964B982 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 45BC61493FEBFC375DD5D65DC8CE876D;
+			remoteGlobalIDString = 00366FC39E0A55C1916D9689768352D6;
 			remoteInfo = Vine;
+		};
+		B60B7B671F811BA49849FB988C2B186E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2D1C4F5594E207891043C809FF880775;
+			remoteInfo = Sorcery;
 		};
 		EC5537A5701684C3EDC369C2941EE466 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = C2F5838CDD81999487D7BF11D9AF69E7;
+			remoteGlobalIDString = 548A9237BB1690EC1AEB8F3C9D74BE05;
 			remoteInfo = "Pods-Vine_Example";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0F9F46E808F22E2BA057378E71AD6CC7 /* ViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = BlockDataSource/Classes/ViewController.swift; sourceTree = "<group>"; };
-		135C7A1BAAA77D3929A843F404A36918 /* BlockDataSource-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BlockDataSource-prefix.pch"; sourceTree = "<group>"; };
+		0295EAAA044894234280E5C24A7B143C /* Vine-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Vine-umbrella.h"; sourceTree = "<group>"; };
+		07812269E39FF1F32933A5AA23E15994 /* Vine-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Vine-dummy.m"; sourceTree = "<group>"; };
+		139D3C9A8A14022874FC86B6C82F1707 /* Sorcery.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Sorcery.modulemap; sourceTree = "<group>"; };
 		17ECEC322FA786A15CDF182A2AE69B5A /* Pods-VineTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-VineTests-dummy.m"; sourceTree = "<group>"; };
 		1BECD4406720DDEBAA0E052C8CFCB961 /* Pods-Vine_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Vine_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		23313015AB81FB270BF04D4630FBBABF /* Pods-VineTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VineTests.release.xcconfig"; sourceTree = "<group>"; };
-		366A666DAA8C26351E4ED077275CBC48 /* Vine-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Vine-dummy.m"; sourceTree = "<group>"; };
+		296546EAAD2AC6865E0AA62C38A6D608 /* Vine.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Vine.xcconfig; sourceTree = "<group>"; };
+		35B89596F0E7823117B78CCC3B1B22D3 /* Vine.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Vine.modulemap; sourceTree = "<group>"; };
+		36D5CABBBA0331E44124F12F93FB773E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		373ED910C28E695E1FF0F67ED4E09197 /* Pods-Vine_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Vine_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		3DAC39237649CD60FACCD9C04003C794 /* BlockDataSource-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BlockDataSource-dummy.m"; sourceTree = "<group>"; };
+		3E1569DB67861C3CD1FEB8EFCF94ACBD /* Vine-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Vine-prefix.pch"; sourceTree = "<group>"; };
+		42A2D3F00E8B17E0FA834163623CC971 /* Pods_Vine_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Vine_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D964FC7947CE1632B5C628609705B07 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		5A8DBB528F51A891E49FC720C28D3E60 /* Vine.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = Vine.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		5E76F34456D533A55415420E1B24CC46 /* Vine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Vine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AD5BED5C7B0746C6A7F8C5C30C3572E /* Vine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Vine.swift; path = Vine/Classes/Vine.swift; sourceTree = "<group>"; };
 		5F2664D6C781041FE708BB4BED22AAA1 /* Pods-VineTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VineTests.debug.xcconfig"; sourceTree = "<group>"; };
-		62A1F35DC5720703E2DADE0C795F385E /* Vine-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Vine-prefix.pch"; sourceTree = "<group>"; };
-		66078ACD2148ABD9004F85D6 /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NavigationController.swift; path = Vine/Classes/NavigationController.swift; sourceTree = "<group>"; };
-		66078ACE2148ABD9004F85D6 /* SplitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SplitViewController.swift; path = Vine/Classes/SplitViewController.swift; sourceTree = "<group>"; };
-		66078ACF2148ABD9004F85D6 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TabBarController.swift; path = Vine/Classes/TabBarController.swift; sourceTree = "<group>"; };
-		66078AD02148ABD9004F85D6 /* Window.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Window.swift; path = Vine/Classes/Window.swift; sourceTree = "<group>"; };
+		607C1D5DE870834E346BF4AD24C92494 /* Vine.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = Vine.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		66551FFD2156AC4300D9FAC6 /* Vine+UIKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Vine+UIKit.swift"; sourceTree = "<group>"; };
+		665520002156AC7200D9FAC6 /* Root.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Root.swift; sourceTree = "<group>"; };
 		68E48AC17A6AEBB7FF4095D41D2DC204 /* Pods-Vine_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Vine_Example.modulemap"; sourceTree = "<group>"; };
-		6E3010DD00761672B8786FB135E7ABED /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		72C3D1F740B1CFD2C063B934A0F7167F /* Vine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Vine.swift; path = Vine/Classes/Vine.swift; sourceTree = "<group>"; };
 		7586966296B94B91E784EC6341971E52 /* Pods-VineTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VineTests-frameworks.sh"; sourceTree = "<group>"; };
-		75D83D1F120823BDA70662CB03421CA8 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		7C107B2F06685A19C35991FB0890B313 /* Vine.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Vine.modulemap; sourceTree = "<group>"; };
-		7C440FA24BCCD66105093AF19A03416A /* Vine-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Vine-umbrella.h"; sourceTree = "<group>"; };
 		7CE164637B83EB5CABC069234256A222 /* Pods-Vine_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Vine_Example-dummy.m"; sourceTree = "<group>"; };
 		7DE89BCD7C0C459575369DAA76E0AAEB /* Pods-VineTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-VineTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		7F80EA40E21E65D090982F177BC235FF /* Pods-Vine_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Vine_Example-resources.sh"; sourceTree = "<group>"; };
 		8278708C934A4F726D0D2B5363A80DEE /* Pods-VineTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-VineTests.modulemap"; sourceTree = "<group>"; };
-		82D993D792A9B9588F49920B08D2837E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		87E299E8548DC27B399C4F42A3358016 /* Pods_VineTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VineTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		844B3604E471F6061456D3ECECD4AB6D /* Sorcery-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Sorcery-umbrella.h"; sourceTree = "<group>"; };
+		89FFBB4F5BA923399B18CDECB32765BC /* ViewControllers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ViewControllers.swift; path = Sorcery/Classes/ViewControllers.swift; sourceTree = "<group>"; };
+		8A0771A68528426EE9FF8690D8FCDB90 /* Sorcery-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Sorcery-prefix.pch"; sourceTree = "<group>"; };
+		8EC47BA164730E4F054029B961560D4D /* Middleware.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Middleware.swift; path = Sorcery/Classes/Middleware.swift; sourceTree = "<group>"; };
+		928F3CFC4AADC61A5035FF246A56475B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		97ABA5A8BE5592AA1704325A01D379A3 /* Pods-Vine_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Vine_Example.release.xcconfig"; sourceTree = "<group>"; };
+		99245494FF3CC0C40B0DF4408B868CC6 /* Pods_VineTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VineTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BD2944A81A39654EE1FC43485056595 /* Pods-VineTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-VineTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		9C9D62C0774848CD645808EFD233BA93 /* Pods-VineTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-VineTests-umbrella.h"; sourceTree = "<group>"; };
 		A2914E40DC5BF763FCD7B019867F8A79 /* Pods-VineTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VineTests-resources.sh"; sourceTree = "<group>"; };
 		A447B4EC05AF182475494D9DD8ACCB8A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A5983DA9C81FF07474BD15EEC9936CD8 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		AE12E04B22D273916B11FEE6445B7F4D /* Pods_Vine_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Vine_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D5346FD9E7F857B6E08004BA3AF6B156 /* Vine.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Vine.xcconfig; sourceTree = "<group>"; };
-		D8BEC5A54616C3183ACA20B1F633ABDF /* BlockDataSource.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BlockDataSource.xcconfig; sourceTree = "<group>"; };
+		A8C5F570713B0411AE9021AE8B480C58 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		B7BFABA3B9106CD34040A2175460DC99 /* Vine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Vine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1B074BD375933697B72A631576ABBCF /* DataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DataSource.swift; path = Sorcery/Classes/DataSource.swift; sourceTree = "<group>"; };
+		D82A120D6CC023DED715EFFF7CC8DD46 /* Sorcery.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Sorcery.xcconfig; sourceTree = "<group>"; };
+		DB7FFFA374FE4F7F3B61DE009A50F0F9 /* Sorcery-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Sorcery-dummy.m"; sourceTree = "<group>"; };
 		DC0CC2FB8330FF08A7C66C65685895F4 /* Pods-Vine_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Vine_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		EA8A81B896D69860661A21E3B159B262 /* BlockDataSource-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BlockDataSource-umbrella.h"; sourceTree = "<group>"; };
+		E7F096CD753F4F43EC83ECA5190CE929 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		EC37DAF414483F6180425BD8DBFD0A61 /* Pods-Vine_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Vine_Example-umbrella.h"; sourceTree = "<group>"; };
-		ED3F025A7AB3C6B429053CB4F0C2AEDF /* BlockDataSource.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BlockDataSource.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F188A1A393C638FC397DA040FB026DD5 /* Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = BlockDataSource/Classes/Extensions.swift; sourceTree = "<group>"; };
-		F298F3EF01EDA5D74211495842FB45E2 /* BlockDataSource.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = BlockDataSource.modulemap; sourceTree = "<group>"; };
+		F47A3F93A157CA6F937A0E15979F33F0 /* Sorcery.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Sorcery.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9BF63F83AC0E292D766D192409DD2B2 /* Pods-Vine_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Vine_Example-frameworks.sh"; sourceTree = "<group>"; };
-		FD261E51FCF3E5876495C1905BA357E7 /* DataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DataSource.swift; path = BlockDataSource/Classes/DataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		3E2C5DEAE618A1C310AB985FEE2D4785 /* Frameworks */ = {
+		141A5F54942A84CECE555B086F607573 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				746F4B454A11F1A7DC94D4096998874C /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		48D46CEB24B5122BAAE9E6E09308E039 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E1D8D1193B832EC4D00EAE8CE31171A6 /* Foundation.framework in Frameworks */,
+				CD2C681E1B172ED71FC371292633FD42 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,37 +125,37 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		80A528385DF7013F7274D6E8BC442D19 /* Frameworks */ = {
+		BD5319C684F099BF0665E2FBB2F9777D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DCF190E12E80990589BAEB6DC384ECA6 /* Foundation.framework in Frameworks */,
+				D7697B9C47205DEE8727FB2FA333AEAC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7BBEB6E5B2D9C2A846376CEF9C4230B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6985CEED738EDE142027E10822E183E /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1A30BC4A69AFD83DA565D2CCE0490A20 /* Development Pods */ = {
+		1F964F8E5ADCF141E64B326B622FE99A /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				B4AB0DCA60F91E9B4CEA7B45C02BCC87 /* Vine */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		2E4CBDA643EBAB9E47B2DFA4A385FDB7 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				F298F3EF01EDA5D74211495842FB45E2 /* BlockDataSource.modulemap */,
-				D8BEC5A54616C3183ACA20B1F633ABDF /* BlockDataSource.xcconfig */,
-				3DAC39237649CD60FACCD9C04003C794 /* BlockDataSource-dummy.m */,
-				135C7A1BAAA77D3929A843F404A36918 /* BlockDataSource-prefix.pch */,
-				EA8A81B896D69860661A21E3B159B262 /* BlockDataSource-umbrella.h */,
-				6E3010DD00761672B8786FB135E7ABED /* Info.plist */,
+				928F3CFC4AADC61A5035FF246A56475B /* Info.plist */,
+				35B89596F0E7823117B78CCC3B1B22D3 /* Vine.modulemap */,
+				296546EAAD2AC6865E0AA62C38A6D608 /* Vine.xcconfig */,
+				07812269E39FF1F32933A5AA23E15994 /* Vine-dummy.m */,
+				3E1569DB67861C3CD1FEB8EFCF94ACBD /* Vine-prefix.pch */,
+				0295EAAA044894234280E5C24A7B143C /* Vine-umbrella.h */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/BlockDataSource";
+			path = "Example/Pods/Target Support Files/Vine";
 			sourceTree = "<group>";
 		};
 		501C9366C781AF3A26BB7507E8D947D5 /* Pods-Vine_Example */ = {
@@ -214,48 +202,35 @@
 			path = "Target Support Files/Pods-VineTests";
 			sourceTree = "<group>";
 		};
-		6FFB573C2E1381DDF0150C9A87287EB2 /* Products */ = {
+		70B699AF80DF5E60440046E739BD81BB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				ED3F025A7AB3C6B429053CB4F0C2AEDF /* BlockDataSource.framework */,
-				AE12E04B22D273916B11FEE6445B7F4D /* Pods_Vine_Example.framework */,
-				87E299E8548DC27B399C4F42A3358016 /* Pods_VineTests.framework */,
-				5E76F34456D533A55415420E1B24CC46 /* Vine.framework */,
+				BB7B4AFB432B9E2051564885C8940B09 /* Sorcery */,
 			);
-			name = Products;
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				1A30BC4A69AFD83DA565D2CCE0490A20 /* Development Pods */,
+				E5EB8E295511A0CBBE371B571E3E302B /* Development Pods */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				D51226939A1FDC09DAA752C1385FD43F /* Pods */,
-				6FFB573C2E1381DDF0150C9A87287EB2 /* Products */,
+				70B699AF80DF5E60440046E739BD81BB /* Pods */,
+				83DB01DA0F66D41420BB7D595A428451 /* Products */,
 				9D3C14F278CAC9717ABEFF23F7BB2A72 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		92B2CA5B759C97651358DAD844C0E704 /* Pod */ = {
+		83DB01DA0F66D41420BB7D595A428451 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				75D83D1F120823BDA70662CB03421CA8 /* LICENSE */,
-				A5983DA9C81FF07474BD15EEC9936CD8 /* README.md */,
-				5A8DBB528F51A891E49FC720C28D3E60 /* Vine.podspec */,
+				42A2D3F00E8B17E0FA834163623CC971 /* Pods_Vine_Example.framework */,
+				99245494FF3CC0C40B0DF4408B868CC6 /* Pods_VineTests.framework */,
+				F47A3F93A157CA6F937A0E15979F33F0 /* Sorcery.framework */,
+				B7BFABA3B9106CD34040A2175460DC99 /* Vine.framework */,
 			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
-		9BB58F663898B4F7D8CCE5B06B729690 /* BlockDataSource */ = {
-			isa = PBXGroup;
-			children = (
-				FD261E51FCF3E5876495C1905BA357E7 /* DataSource.swift */,
-				F188A1A393C638FC397DA040FB026DD5 /* Extensions.swift */,
-				0F9F46E808F22E2BA057378E71AD6CC7 /* ViewController.swift */,
-				2E4CBDA643EBAB9E47B2DFA4A385FDB7 /* Support Files */,
-			);
-			path = BlockDataSource;
+			name = Products;
 			sourceTree = "<group>";
 		};
 		9D3C14F278CAC9717ABEFF23F7BB2A72 /* Targets Support Files */ = {
@@ -267,33 +242,25 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		B43CAB5CBDBE7ADC9C5BE27C935627C9 /* Support Files */ = {
+		A7EE1F993DD6AEC7AD12C479B4A31A33 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				82D993D792A9B9588F49920B08D2837E /* Info.plist */,
-				7C107B2F06685A19C35991FB0890B313 /* Vine.modulemap */,
-				D5346FD9E7F857B6E08004BA3AF6B156 /* Vine.xcconfig */,
-				366A666DAA8C26351E4ED077275CBC48 /* Vine-dummy.m */,
-				62A1F35DC5720703E2DADE0C795F385E /* Vine-prefix.pch */,
-				7C440FA24BCCD66105093AF19A03416A /* Vine-umbrella.h */,
+				A8C5F570713B0411AE9021AE8B480C58 /* LICENSE */,
+				E7F096CD753F4F43EC83ECA5190CE929 /* README.md */,
+				607C1D5DE870834E346BF4AD24C92494 /* Vine.podspec */,
 			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/Vine";
+			name = Pod;
 			sourceTree = "<group>";
 		};
-		B4AB0DCA60F91E9B4CEA7B45C02BCC87 /* Vine */ = {
+		BB7B4AFB432B9E2051564885C8940B09 /* Sorcery */ = {
 			isa = PBXGroup;
 			children = (
-				66078ACD2148ABD9004F85D6 /* NavigationController.swift */,
-				92B2CA5B759C97651358DAD844C0E704 /* Pod */,
-				66078ACE2148ABD9004F85D6 /* SplitViewController.swift */,
-				66078ACF2148ABD9004F85D6 /* TabBarController.swift */,
-				72C3D1F740B1CFD2C063B934A0F7167F /* Vine.swift */,
-				66078AD02148ABD9004F85D6 /* Window.swift */,
-				B43CAB5CBDBE7ADC9C5BE27C935627C9 /* Support Files */,
+				C1B074BD375933697B72A631576ABBCF /* DataSource.swift */,
+				8EC47BA164730E4F054029B961560D4D /* Middleware.swift */,
+				89FFBB4F5BA923399B18CDECB32765BC /* ViewControllers.swift */,
+				F19E13487D1F37BA0E6C5377D01993F6 /* Support Files */,
 			);
-			name = Vine;
-			path = ../..;
+			path = Sorcery;
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -304,22 +271,49 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D51226939A1FDC09DAA752C1385FD43F /* Pods */ = {
+		E57C2A331792412617FC7205ACB3E3FE /* Vine */ = {
 			isa = PBXGroup;
 			children = (
-				9BB58F663898B4F7D8CCE5B06B729690 /* BlockDataSource */,
+				5AD5BED5C7B0746C6A7F8C5C30C3572E /* Vine.swift */,
+				665520002156AC7200D9FAC6 /* Root.swift */,
+				66551FFD2156AC4300D9FAC6 /* Vine+UIKit.swift */,
+				A7EE1F993DD6AEC7AD12C479B4A31A33 /* Pod */,
+				1F964F8E5ADCF141E64B326B622FE99A /* Support Files */,
 			);
-			name = Pods;
+			name = Vine;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		E5EB8E295511A0CBBE371B571E3E302B /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E57C2A331792412617FC7205ACB3E3FE /* Vine */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		F19E13487D1F37BA0E6C5377D01993F6 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				36D5CABBBA0331E44124F12F93FB773E /* Info.plist */,
+				139D3C9A8A14022874FC86B6C82F1707 /* Sorcery.modulemap */,
+				D82A120D6CC023DED715EFFF7CC8DD46 /* Sorcery.xcconfig */,
+				DB7FFFA374FE4F7F3B61DE009A50F0F9 /* Sorcery-dummy.m */,
+				8A0771A68528426EE9FF8690D8FCDB90 /* Sorcery-prefix.pch */,
+				844B3604E471F6061456D3ECECD4AB6D /* Sorcery-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Sorcery";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		343F531C4480739F42FFA9531B070176 /* Headers */ = {
+		2F32692BA89291C0BB818189452696E7 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				41D8CB1974C9F4C6C77B15DB296022A7 /* BlockDataSource-umbrella.h in Headers */,
+				A5F58B345E07D1C264B9DC6F414F0C6F /* Pods-Vine_Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,32 +325,32 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A60AA37FDE18687E4C96B539283582EC /* Headers */ = {
+		D31EE0054E76CAA025976545C7540532 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EB6627A18367F07E98DC1454CB059C7E /* Pods-Vine_Example-umbrella.h in Headers */,
+				61CA92B8AD06D2B3FD2B0C60BD4A439D /* Sorcery-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AE7364C4A4DB135EC7C121679DA14E72 /* Headers */ = {
+		F70DED91B8242A789477C476A6AB2548 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E18607174BA1443877E8CD96E4827633 /* Vine-umbrella.h in Headers */,
+				0AF11851A4404E07AC1DA54AEDF3963C /* Vine-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		45BC61493FEBFC375DD5D65DC8CE876D /* Vine */ = {
+		00366FC39E0A55C1916D9689768352D6 /* Vine */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8F8412E7C186B6D71C5C51B6EDD8B94B /* Build configuration list for PBXNativeTarget "Vine" */;
+			buildConfigurationList = 392C7542F42B6A9082B2041D2354993E /* Build configuration list for PBXNativeTarget "Vine" */;
 			buildPhases = (
-				828213F9090FAF5C0D01CD69B4727600 /* Sources */,
-				80A528385DF7013F7274D6E8BC442D19 /* Frameworks */,
-				AE7364C4A4DB135EC7C121679DA14E72 /* Headers */,
+				C5477F6D5B6D4BBC291117E3A170396E /* Sources */,
+				141A5F54942A84CECE555B086F607573 /* Frameworks */,
+				F70DED91B8242A789477C476A6AB2548 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -364,7 +358,43 @@
 			);
 			name = Vine;
 			productName = Vine;
-			productReference = 5E76F34456D533A55415420E1B24CC46 /* Vine.framework */;
+			productReference = B7BFABA3B9106CD34040A2175460DC99 /* Vine.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		2D1C4F5594E207891043C809FF880775 /* Sorcery */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CFE20017123B597868A9744C89E9843E /* Build configuration list for PBXNativeTarget "Sorcery" */;
+			buildPhases = (
+				14FC4C9C64451270145E1899DB9901CE /* Sources */,
+				BD5319C684F099BF0665E2FBB2F9777D /* Frameworks */,
+				D31EE0054E76CAA025976545C7540532 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Sorcery;
+			productName = Sorcery;
+			productReference = F47A3F93A157CA6F937A0E15979F33F0 /* Sorcery.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		548A9237BB1690EC1AEB8F3C9D74BE05 /* Pods-Vine_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 980213908AE86F8CBABABC4F73CE7396 /* Build configuration list for PBXNativeTarget "Pods-Vine_Example" */;
+			buildPhases = (
+				86EED464CCDD620B3B904F2CA080C1EA /* Sources */,
+				F7BBEB6E5B2D9C2A846376CEF9C4230B /* Frameworks */,
+				2F32692BA89291C0BB818189452696E7 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				21E9DA2D2DF6E2C56E9C33EED08F4623 /* PBXTargetDependency */,
+				EA45D3EA4E79F7640791715A40E2F506 /* PBXTargetDependency */,
+			);
+			name = "Pods-Vine_Example";
+			productName = "Pods-Vine_Example";
+			productReference = 42A2D3F00E8B17E0FA834163623CC971 /* Pods_Vine_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		5637230F5C7B79C9FB95466F50742FD5 /* Pods-VineTests */ = {
@@ -383,43 +413,7 @@
 			);
 			name = "Pods-VineTests";
 			productName = "Pods-VineTests";
-			productReference = 87E299E8548DC27B399C4F42A3358016 /* Pods_VineTests.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		72C5ED296F4F10A21FC18D0DDCD7C4AB /* BlockDataSource */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = CB436B33EBA0E6D00848353B54BFB5B1 /* Build configuration list for PBXNativeTarget "BlockDataSource" */;
-			buildPhases = (
-				8591725BF6C9864B6E5DF07B8F2A5CD7 /* Sources */,
-				3E2C5DEAE618A1C310AB985FEE2D4785 /* Frameworks */,
-				343F531C4480739F42FFA9531B070176 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = BlockDataSource;
-			productName = BlockDataSource;
-			productReference = ED3F025A7AB3C6B429053CB4F0C2AEDF /* BlockDataSource.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		C2F5838CDD81999487D7BF11D9AF69E7 /* Pods-Vine_Example */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 61B0BC75DC720E4AAECFE8EFA7AEA751 /* Build configuration list for PBXNativeTarget "Pods-Vine_Example" */;
-			buildPhases = (
-				69E6FCE115BFDA38355F0209B2C2A5C7 /* Sources */,
-				48D46CEB24B5122BAAE9E6E09308E039 /* Frameworks */,
-				A60AA37FDE18687E4C96B539283582EC /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				577A45C412474988F9D26258D1A656E0 /* PBXTargetDependency */,
-				5AB266FA15B169E3C85588486E02B41F /* PBXTargetDependency */,
-			);
-			name = "Pods-Vine_Example";
-			productName = "Pods-Vine_Example";
-			productReference = AE12E04B22D273916B11FEE6445B7F4D /* Pods_Vine_Example.framework */;
+			productReference = 99245494FF3CC0C40B0DF4408B868CC6 /* Pods_VineTests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -430,6 +424,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
 				LastUpgradeCheck = 0930;
+				TargetAttributes = {
+					548A9237BB1690EC1AEB8F3C9D74BE05 = {
+						LastSwiftMigration = 0920;
+					};
+				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -439,48 +438,35 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 6FFB573C2E1381DDF0150C9A87287EB2 /* Products */;
+			productRefGroup = 83DB01DA0F66D41420BB7D595A428451 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				72C5ED296F4F10A21FC18D0DDCD7C4AB /* BlockDataSource */,
-				C2F5838CDD81999487D7BF11D9AF69E7 /* Pods-Vine_Example */,
+				548A9237BB1690EC1AEB8F3C9D74BE05 /* Pods-Vine_Example */,
 				5637230F5C7B79C9FB95466F50742FD5 /* Pods-VineTests */,
-				45BC61493FEBFC375DD5D65DC8CE876D /* Vine */,
+				2D1C4F5594E207891043C809FF880775 /* Sorcery */,
+				00366FC39E0A55C1916D9689768352D6 /* Vine */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		69E6FCE115BFDA38355F0209B2C2A5C7 /* Sources */ = {
+		14FC4C9C64451270145E1899DB9901CE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9112E6AFF5BDEC9F81DF8A65CE32AB9F /* Pods-Vine_Example-dummy.m in Sources */,
+				7C4A9B13F0F94555BB9A575A34B356A7 /* DataSource.swift in Sources */,
+				D6335121ADD0ECA775C1FDEA927015AF /* Middleware.swift in Sources */,
+				1721DD2880C477AC6F2FB45F3B82455C /* Sorcery-dummy.m in Sources */,
+				F33550B52C62561D04C195EFFAF1626A /* ViewControllers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		828213F9090FAF5C0D01CD69B4727600 /* Sources */ = {
+		86EED464CCDD620B3B904F2CA080C1EA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7441A210489B82A568F9D225FBA76165 /* Vine-dummy.m in Sources */,
-				30CD0484BA0D8FEA0DA58287167E62ED /* Vine.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8591725BF6C9864B6E5DF07B8F2A5CD7 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				589BA467317638CCB62F8FB5A3238127 /* BlockDataSource-dummy.m in Sources */,
-				29ACED2C465B8AFF203FE7C5975125FA /* DataSource.swift in Sources */,
-				66078AD12148ABD9004F85D6 /* NavigationController.swift in Sources */,
-				37A29465ACC5C8CE44303C84A5883E87 /* Extensions.swift in Sources */,
-				66078AD32148ABD9004F85D6 /* TabBarController.swift in Sources */,
-				7AB62B3C9E2EACA70DC7085BD937825C /* ViewController.swift in Sources */,
-				66078AD22148ABD9004F85D6 /* SplitViewController.swift in Sources */,
-				66078AD42148ABD9004F85D6 /* Window.swift in Sources */,
+				F97AD4B51D4225C59D050C5FB2D9155F /* Pods-Vine_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -492,39 +478,50 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C5477F6D5B6D4BBC291117E3A170396E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBAE0879D7F57A1AF1BB45FC832BBEEC /* Vine-dummy.m in Sources */,
+				665520022156AC7500D9FAC6 /* Root.swift in Sources */,
+				66551FFF2156AC5D00D9FAC6 /* Vine+UIKit.swift in Sources */,
+				48988EA1F85495E47813EFB302AFA3A2 /* Vine.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
 		178DA1819F03BA945425A2548CE83246 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-Vine_Example";
-			target = C2F5838CDD81999487D7BF11D9AF69E7 /* Pods-Vine_Example */;
+			target = 548A9237BB1690EC1AEB8F3C9D74BE05 /* Pods-Vine_Example */;
 			targetProxy = EC5537A5701684C3EDC369C2941EE466 /* PBXContainerItemProxy */;
 		};
-		577A45C412474988F9D26258D1A656E0 /* PBXTargetDependency */ = {
+		21E9DA2D2DF6E2C56E9C33EED08F4623 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = BlockDataSource;
-			target = 72C5ED296F4F10A21FC18D0DDCD7C4AB /* BlockDataSource */;
-			targetProxy = 1612E6191947A8E422BCB6CABAAE6BEB /* PBXContainerItemProxy */;
-		};
-		5AB266FA15B169E3C85588486E02B41F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Vine;
-			target = 45BC61493FEBFC375DD5D65DC8CE876D /* Vine */;
-			targetProxy = CD1E360BBE00350DF0E2858EAD7A8143 /* PBXContainerItemProxy */;
+			name = Sorcery;
+			target = 2D1C4F5594E207891043C809FF880775 /* Sorcery */;
+			targetProxy = B60B7B671F811BA49849FB988C2B186E /* PBXContainerItemProxy */;
 		};
 		B6626361CA80AE501A3D98A6DB8800B5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Vine;
-			target = 45BC61493FEBFC375DD5D65DC8CE876D /* Vine */;
+			target = 00366FC39E0A55C1916D9689768352D6 /* Vine */;
 			targetProxy = 222BA2AF3B1D11774BFFBC40415992EE /* PBXContainerItemProxy */;
+		};
+		EA45D3EA4E79F7640791715A40E2F506 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Vine;
+			target = 00366FC39E0A55C1916D9689768352D6 /* Vine */;
+			targetProxy = 6E8FAA11C554D27CDE3CED495964B982 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		143502B79C6273EC9AD26C9FB52392F1 /* Release */ = {
+		17F1757909251ADAC17A703D73138072 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D8BEC5A54616C3183ACA20B1F633ABDF /* BlockDataSource.xcconfig */;
+			baseConfigurationReference = 296546EAAD2AC6865E0AA62C38A6D608 /* Vine.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -535,25 +532,24 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/BlockDataSource/BlockDataSource-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/BlockDataSource/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/Vine/Vine-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Vine/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/BlockDataSource/BlockDataSource.modulemap";
-				PRODUCT_MODULE_NAME = BlockDataSource;
-				PRODUCT_NAME = BlockDataSource;
+				MODULEMAP_FILE = "Target Support Files/Vine/Vine.modulemap";
+				PRODUCT_MODULE_NAME = Vine;
+				PRODUCT_NAME = Vine;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 		1F14487A150D9959FED7B8C4A78B5A58 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -590,9 +586,111 @@
 			};
 			name = Debug;
 		};
-		7409296EAC563BB69B6B4E4011EC8756 /* Release */ = {
+		27830480399F33E0388E5672446B60E4 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D5346FD9E7F857B6E08004BA3AF6B156 /* Vine.xcconfig */;
+			baseConfigurationReference = D82A120D6CC023DED715EFFF7CC8DD46 /* Sorcery.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Sorcery/Sorcery-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Sorcery/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Sorcery/Sorcery.modulemap";
+				PRODUCT_MODULE_NAME = Sorcery;
+				PRODUCT_NAME = Sorcery;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		34E792223AB5CB0F2E895C14681A59C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 373ED910C28E695E1FF0F67ED4E09197 /* Pods-Vine_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Vine_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Vine_Example/Pods-Vine_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6CEA9ED76EBD3D1D533B42E38CD6DE5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D82A120D6CC023DED715EFFF7CC8DD46 /* Sorcery.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Sorcery/Sorcery-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Sorcery/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Sorcery/Sorcery.modulemap";
+				PRODUCT_MODULE_NAME = Sorcery;
+				PRODUCT_NAME = Sorcery;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		79B9B2779C924BC7EF1B189552EDE425 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 296546EAAD2AC6865E0AA62C38A6D608 /* Vine.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -616,41 +714,6 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 3.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		80F5E16BFA7ED53428C1CCBF3782D066 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 97ABA5A8BE5592AA1704325A01D379A3 /* Pods-Vine_Example.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Vine_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Vine_Example/Pods-Vine_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -814,75 +877,12 @@
 			};
 			name = Release;
 		};
-		CDFC0A9999FF2F458CA2972DB9E97F55 /* Debug */ = {
+		E7D497B8BC90D339CBE5E32AD1E6FD4F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D5346FD9E7F857B6E08004BA3AF6B156 /* Vine.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Vine/Vine-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Vine/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Vine/Vine.modulemap";
-				PRODUCT_MODULE_NAME = Vine;
-				PRODUCT_NAME = Vine;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		DE347AF92954333DB5C577C38B71BF2F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D8BEC5A54616C3183ACA20B1F633ABDF /* BlockDataSource.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/BlockDataSource/BlockDataSource-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/BlockDataSource/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/BlockDataSource/BlockDataSource.modulemap";
-				PRODUCT_MODULE_NAME = BlockDataSource;
-				PRODUCT_NAME = BlockDataSource;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		FA8FBEA930479EA8472DE26A9C8F30EA /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 373ED910C28E695E1FF0F67ED4E09197 /* Pods-Vine_Example.debug.xcconfig */;
+			baseConfigurationReference = 97ABA5A8BE5592AA1704325A01D379A3 /* Pods-Vine_Example.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -905,13 +905,14 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
@@ -925,6 +926,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		392C7542F42B6A9082B2041D2354993E /* Build configuration list for PBXNativeTarget "Vine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17F1757909251ADAC17A703D73138072 /* Debug */,
+				79B9B2779C924BC7EF1B189552EDE425 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4B42C70914B65E936C200425B2F8376D /* Build configuration list for PBXNativeTarget "Pods-VineTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -934,29 +944,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		61B0BC75DC720E4AAECFE8EFA7AEA751 /* Build configuration list for PBXNativeTarget "Pods-Vine_Example" */ = {
+		980213908AE86F8CBABABC4F73CE7396 /* Build configuration list for PBXNativeTarget "Pods-Vine_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FA8FBEA930479EA8472DE26A9C8F30EA /* Debug */,
-				80F5E16BFA7ED53428C1CCBF3782D066 /* Release */,
+				34E792223AB5CB0F2E895C14681A59C6 /* Debug */,
+				E7D497B8BC90D339CBE5E32AD1E6FD4F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8F8412E7C186B6D71C5C51B6EDD8B94B /* Build configuration list for PBXNativeTarget "Vine" */ = {
+		CFE20017123B597868A9744C89E9843E /* Build configuration list for PBXNativeTarget "Sorcery" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CDFC0A9999FF2F458CA2972DB9E97F55 /* Debug */,
-				7409296EAC563BB69B6B4E4011EC8756 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		CB436B33EBA0E6D00848353B54BFB5B1 /* Build configuration list for PBXNativeTarget "BlockDataSource" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				DE347AF92954333DB5C577C38B71BF2F /* Debug */,
-				143502B79C6273EC9AD26C9FB52392F1 /* Release */,
+				6CEA9ED76EBD3D1D533B42E38CD6DE5F /* Debug */,
+				27830480399F33E0388E5672446B60E4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

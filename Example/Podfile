@@ -3,7 +3,7 @@ use_frameworks!
 target 'Vine_Example' do
   pod 'Vine', :path => '../'
 
-  pod 'BlockDataSource'
+  pod 'Sorcery'
 
   target 'VineTests' do
     inherit! :search_paths
