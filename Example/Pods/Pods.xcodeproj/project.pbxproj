@@ -12,8 +12,8 @@
 		2F95C0B5425349D3F2DD1F48140C66A7 /* Pods-VineTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 17ECEC322FA786A15CDF182A2AE69B5A /* Pods-VineTests-dummy.m */; };
 		48988EA1F85495E47813EFB302AFA3A2 /* Vine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD5BED5C7B0746C6A7F8C5C30C3572E /* Vine.swift */; };
 		61CA92B8AD06D2B3FD2B0C60BD4A439D /* Sorcery-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 844B3604E471F6061456D3ECECD4AB6D /* Sorcery-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		66551FFF2156AC5D00D9FAC6 /* Vine+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66551FFD2156AC4300D9FAC6 /* Vine+UIKit.swift */; };
-		665520022156AC7500D9FAC6 /* Root.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665520002156AC7200D9FAC6 /* Root.swift */; };
+		665520092156B6AB00D9FAC6 /* Root.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665520062156B68D00D9FAC6 /* Root.swift */; };
+		6655200A2156B6AF00D9FAC6 /* Vine+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665520052156B68D00D9FAC6 /* Vine+UIKit.swift */; };
 		7C4A9B13F0F94555BB9A575A34B356A7 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B074BD375933697B72A631576ABBCF /* DataSource.swift */; };
 		911DC10F42F540E8DF3D3AED06CCD135 /* Pods-VineTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C9D62C0774848CD645808EFD233BA93 /* Pods-VineTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A5F58B345E07D1C264B9DC6F414F0C6F /* Pods-Vine_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EC37DAF414483F6180425BD8DBFD0A61 /* Pods-Vine_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -76,8 +76,8 @@
 		5AD5BED5C7B0746C6A7F8C5C30C3572E /* Vine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Vine.swift; path = Vine/Classes/Vine.swift; sourceTree = "<group>"; };
 		5F2664D6C781041FE708BB4BED22AAA1 /* Pods-VineTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VineTests.debug.xcconfig"; sourceTree = "<group>"; };
 		607C1D5DE870834E346BF4AD24C92494 /* Vine.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = Vine.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		66551FFD2156AC4300D9FAC6 /* Vine+UIKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Vine+UIKit.swift"; sourceTree = "<group>"; };
-		665520002156AC7200D9FAC6 /* Root.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Root.swift; sourceTree = "<group>"; };
+		665520052156B68D00D9FAC6 /* Vine+UIKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Vine+UIKit.swift"; path = "Vine/Classes/Vine+UIKit.swift"; sourceTree = "<group>"; };
+		665520062156B68D00D9FAC6 /* Root.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Root.swift; path = Vine/Classes/Root.swift; sourceTree = "<group>"; };
 		68E48AC17A6AEBB7FF4095D41D2DC204 /* Pods-Vine_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Vine_Example.modulemap"; sourceTree = "<group>"; };
 		7586966296B94B91E784EC6341971E52 /* Pods-VineTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VineTests-frameworks.sh"; sourceTree = "<group>"; };
 		7CE164637B83EB5CABC069234256A222 /* Pods-Vine_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Vine_Example-dummy.m"; sourceTree = "<group>"; };
@@ -275,8 +275,8 @@
 			isa = PBXGroup;
 			children = (
 				5AD5BED5C7B0746C6A7F8C5C30C3572E /* Vine.swift */,
-				665520002156AC7200D9FAC6 /* Root.swift */,
-				66551FFD2156AC4300D9FAC6 /* Vine+UIKit.swift */,
+				665520062156B68D00D9FAC6 /* Root.swift */,
+				665520052156B68D00D9FAC6 /* Vine+UIKit.swift */,
 				A7EE1F993DD6AEC7AD12C479B4A31A33 /* Pod */,
 				1F964F8E5ADCF141E64B326B622FE99A /* Support Files */,
 			);
@@ -483,9 +483,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				CBAE0879D7F57A1AF1BB45FC832BBEEC /* Vine-dummy.m in Sources */,
-				665520022156AC7500D9FAC6 /* Root.swift in Sources */,
-				66551FFF2156AC5D00D9FAC6 /* Vine+UIKit.swift in Sources */,
 				48988EA1F85495E47813EFB302AFA3A2 /* Vine.swift in Sources */,
+				6655200A2156B6AF00D9FAC6 /* Vine+UIKit.swift in Sources */,
+				665520092156B6AB00D9FAC6 /* Root.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
