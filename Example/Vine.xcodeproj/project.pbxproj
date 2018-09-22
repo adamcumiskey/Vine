@@ -11,7 +11,6 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		665520042156AE5200D9FAC6 /* VineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665520032156AE5200D9FAC6 /* VineTests.swift */; };
-		666083FB20D5B7AA00D14DB4 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 666083FA20D5B7AA00D14DB4 /* Constants.swift */; };
 		6660841020D8A53300D14DB4 /* MapVine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6660840F20D8A53300D14DB4 /* MapVine.swift */; };
 		6687984620D586750064F2BC /* Vines.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6687984020D586740064F2BC /* Vines.swift */; };
 		6687984820D586750064F2BC /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6687984220D586740064F2BC /* MapViewController.swift */; };
@@ -33,7 +32,6 @@
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		665520032156AE5200D9FAC6 /* VineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VineTests.swift; sourceTree = "<group>"; };
 		666083F820D5B7AA00D14DB4 /* VineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		666083FA20D5B7AA00D14DB4 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		666083FC20D5B7AA00D14DB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6660840F20D8A53300D14DB4 /* MapVine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVine.swift; sourceTree = "<group>"; };
 		6687984020D586740064F2BC /* Vines.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vines.swift; sourceTree = "<group>"; };
@@ -123,7 +121,6 @@
 		666083F920D5B7AA00D14DB4 /* VineTests */ = {
 			isa = PBXGroup;
 			children = (
-				666083FA20D5B7AA00D14DB4 /* Constants.swift */,
 				665520032156AE5200D9FAC6 /* VineTests.swift */,
 				666083FC20D5B7AA00D14DB4 /* Info.plist */,
 			);
@@ -367,7 +364,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				666083FB20D5B7AA00D14DB4 /* Constants.swift in Sources */,
 				665520042156AE5200D9FAC6 /* VineTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

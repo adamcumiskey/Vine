@@ -19,7 +19,7 @@
 //  THE SOFTWARE.
 //
 //  AppDelegate.swift
-//  Vine
+//  VineExample
 //
 //  Created by Adam on 06/16/2018.
 //  Copyright (c) 2018 Adam. All rights reserved.
