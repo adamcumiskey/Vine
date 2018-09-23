@@ -32,18 +32,19 @@ private enum AssociatedKeys {
 
 public protocol Root: AnyObject {
     associatedtype VineType = Vine<Self>
-    func attachVine(_ vine: VineType)
 }
 
 public extension Root {
-    /// Attach a Vine to a root.
-    ///
-    /// Holds a strong reference to a vine, assigns the `vine.root` to self, and calls `vine.start()`
-    func attachVine(_ vine: VineType) {
-        objc_setAssociatedObject(self, &AssociatedKeys.vine, vine, objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN_NONATOMIC)
-        if let vine = vine as? Vine<Self> {
-            vine.root = self
-            vine.start()
+    var vine: VineType? {
+        get {
+            return objc_getAssociatedObject(self, &AssociatedKeys.vine) as? VineType
+        }
+        set {
+            objc_setAssociatedObject(self, &AssociatedKeys.vine, newValue, objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN_NONATOMIC)
+            if let vine = vine as? Vine<Self> {
+                vine.root = self
+                vine.start()
+            }
         }
     }
 }
