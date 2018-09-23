@@ -36,7 +36,7 @@ class VineTests: XCTestCase {
     func testVineShouldHaveReferenceToRootAfterBeingAssignedToRoot() {
         let vine = Vine<NSObject>()
         let object = NSObject()
-        object.vine = vine
+        object.attachVine(vine)
         XCTAssertEqual(vine.root, object)
     }
     
@@ -44,7 +44,7 @@ class VineTests: XCTestCase {
         let expect = expectation(description: "starts the vine")
         let vine = Vine<NSObject> { _ in expect.fulfill() }
         let object = NSObject()
-        object.vine = vine
+        object.attachVine(vine)
         waitForExpectations(timeout: timeout) { _ in }
     }
 }

@@ -34,12 +34,12 @@ extension Vine {
         return Vine<UIWindow> { vine in
             if UIDevice.current.userInterfaceIdiom == .pad {
                 let controller = UISplitViewController()
-                controller.vine = .ipadVine
+                controller.attachVine(.ipadVine)
                 vine.root?.rootViewController = controller
                 vine.root?.makeKeyAndVisible()
             } else {
                 let controller = UITabBarController()
-                controller.vine = .menuVine(embeddedInSplitView: false)
+                controller.attachVine(.menuVine(embeddedInSplitView: false))
                 vine.root?.rootViewController = controller
                 vine.root?.makeKeyAndVisible()
             }
@@ -50,11 +50,11 @@ extension Vine {
     class var ipadVine: Vine<UISplitViewController> {
         return Vine<UISplitViewController> { vine in
             let mapController = UINavigationController()
-            mapController.vine = .mapVine
+            mapController.attachVine(.mapVine)
             mapController.topViewController?.navigationItem.leftBarButtonItem = vine.root?.displayModeButtonItem
             
             let tabController = UITabBarController()
-            tabController.vine = .menuVine(embeddedInSplitView: true)
+            tabController.attachVine(.menuVine(embeddedInSplitView: true))
             
             vine.root?.viewControllers = [tabController, mapController]
         }
@@ -67,12 +67,12 @@ extension Vine {
             // Add the Map as a tab if we're not in a SplitView environment
             if !embeddedInSplitView {
                 let mapController = UINavigationController()
-                mapController.vine = .mapVine
+                mapController.attachVine(.mapVine)
                 mapController.tabBarItem = UITabBarItem(title: "Map", image: nil, selectedImage: nil)
                 viewControllers.append(mapController)
             }
             let contentController = UINavigationController()
-            contentController.vine = .contentVine
+            contentController.attachVine(.contentVine)
             contentController.tabBarItem = UITabBarItem(title: "Content", image: nil, selectedImage: nil)
             viewControllers.append(contentController)
             vine.root?.viewControllers = viewControllers
