@@ -5,32 +5,29 @@
     
     
       
-      <testcase classname="fastlane.lanes" name="0: default_platform" time="0.077252">
+      <testcase classname="fastlane.lanes" name="0: default_platform" time="0.00269">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="1: version_bump_podspec" time="0.024678">
+      <testcase classname="fastlane.lanes" name="1: version_bump_podspec" time="0.003891">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="2: git_commit" time="0.463683">
+      <testcase classname="fastlane.lanes" name="2: git_commit" time="0.05678">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="3: add_git_tag" time="0.047085">
+      <testcase classname="fastlane.lanes" name="3: add_git_tag" time="0.026719">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="4: push_to_git_remote" time="6.718229">
+      <testcase classname="fastlane.lanes" name="4: push_to_git_remote" time="2.871848">
         
-      </testcase>
-    
-      
-      <testcase classname="fastlane.lanes" name="5: pod_push" time="287.938197">
+          <failure message="/usr/local/lib/ruby/gems/2.4.0/gems/fastlane-2.62.0/fastlane/lib/fastlane/actions/actions_helper.rb:48:in `execute_action'&#10;/usr/local/lib/ruby/gems/2.4.0/gems/fastlane-2.62.0/fastlane/lib/fastlane/runner.rb:234:in `block in execute_action'&#10;/usr/local/lib/ruby/gems/2.4.0/gems/fastlane-2.62.0/fastlane/lib/fastlane/runner.rb:230:in `chdir'&#10;/usr/local/lib/ruby/gems/2.4.0/gems/fastlane-2.62.0/fastlane/lib/fastlane/runner.rb:230:in `execute_action'&#10;/usr/local/lib/ruby/gems/2.4.0/gems/fastlane-2.62.0/fastlane/lib/fastlane/runner.rb:148:in `trigger_action_by_name'&#10;/usr/local/lib/ruby/gems/2.4.0/gems/fastlane-2.62.0/fastlane/lib/fastlane/fast_file.rb:146:in `method_missing'&#10;Fastfile:24:in `block (2 levels) in parsing_binding'&#10;/usr/local/lib/ruby/gems/2.4.0/gems/fastlane-2.62.0/fastlane/lib/fastlane/lane.rb:33:in `call'&#10;/usr/local/lib/ruby/gems/2.4.0/gems/fastlane-2.62.0/fastlane/lib/fastlane/runner.rb:49:in `block in execute'&#10;/usr/local/lib/ruby/gems/2.4.0/gems/fastlane-2.62.0/fastlane/lib/fastlane/runner.rb:45:in `chdir'&#10;/usr/local/lib/ruby/gems/2.4.0/gems/fastlane-2.62.0/fastlane/lib/fastlane/runner.rb:45:in `execute'&#10;/usr/local/lib/ruby/gems/2.4.0/gems/fastlane-2.62.0/fastlane/lib/fastlane/lane_manager.rb:54:in `cruise_lane'&#10;/usr/local/lib/ruby/gems/2.4.0/gems/fastlane-2.62.0/fastlane/lib/fastlane/command_line_handler.rb:30:in `handle'&#10;/usr/local/lib/ruby/gems/2.4.0/gems/fastlane-2.62.0/fastlane/lib/fastlane/commands_generator.rb:104:in `block (2 levels) in run'&#10;/usr/local/lib/ruby/gems/2.4.0/gems/commander-fastlane-4.4.5/lib/commander/command.rb:178:in `call'&#10;/usr/local/lib/ruby/gems/2.4.0/gems/commander-fastlane-4.4.5/lib/commander/command.rb:153:in `run'&#10;/usr/local/lib/ruby/gems/2.4.0/gems/commander-fastlane-4.4.5/lib/commander/runner.rb:476:in `run_active_command'&#10;/usr/local/lib/ruby/gems/2.4.0/gems/fastlane-2.62.0/fastlane_core/lib/fastlane_core/ui/fastlane_runner.rb:66:in `run!'&#10;/usr/local/lib/ruby/gems/2.4.0/gems/commander-fastlane-4.4.5/lib/commander/delegates.rb:15:in `run!'&#10;/usr/local/lib/ruby/gems/2.4.0/gems/fastlane-2.62.0/fastlane/lib/fastlane/commands_generator.rb:303:in `run'&#10;/usr/local/lib/ruby/gems/2.4.0/gems/fastlane-2.62.0/fastlane/lib/fastlane/commands_generator.rb:42:in `start'&#10;/usr/local/lib/ruby/gems/2.4.0/gems/fastlane-2.62.0/fastlane/lib/fastlane/cli_tools_distributor.rb:66:in `take_off'&#10;/usr/local/lib/ruby/gems/2.4.0/gems/fastlane-2.62.0/bin/fastlane:20:in `&lt;top (required)&gt;'&#10;/usr/local/bin/fastlane:23:in `load'&#10;/usr/local/bin/fastlane:23:in `&lt;main&gt;'&#10;&#10;Exit status of command 'git push origin master:master --tags' was 1 instead of 0.&#10;To github.com:adamcumiskey/Vine.git&#10; * [new tag]         3.2.1 -&gt; 3.2.1&#10; ! [rejected]        master -&gt; master (non-fast-forward)&#10;error: failed to push some refs to 'git@github.com:adamcumiskey/Vine.git'&#10;hint: Updates were rejected because the tip of your current branch is behind&#10;hint: its remote counterpart. Integrate the remote changes (e.g.&#10;hint: 'git pull ...') before pushing again.&#10;hint: See the 'Note about fast-forwards' in 'git push --help' for details.&#10;" />
         
       </testcase>
     
