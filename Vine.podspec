@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/adamcumiskey/Vine.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '9.3'
-  s.swift_version = '3.2.1'
+  s.swift_version = '4.2'
 
   s.source_files = 'Vine/Classes/**/*'
 end

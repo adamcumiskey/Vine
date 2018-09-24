@@ -18,7 +18,8 @@ default_platform(:ios)
 platform :ios do
   desc "Tag a new version and push to cocoapods"
   lane :release_version do |options|
-    version = options[:version] || version_bump_podspec(bump_type: "patch")
+    type = options[:type] || "patch"
+    version = version_bump_podspec(bump_type: type)
     git_commit(path: "./Vine.podspec", message: version)
     add_git_tag(tag: version)
     push_to_git_remote(tags: true)
