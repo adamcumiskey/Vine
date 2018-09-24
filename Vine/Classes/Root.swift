@@ -18,31 +18,38 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //  THE SOFTWARE.
 //
-//  NavigationController.swift
+//  Root.swift
 //  Vine
 //
-//  Created by Adam on 9/10/18.
+//  Created by Adam Cumiskey on 9/22/18.
 //
 
-import UIKit
+import Foundation
 
-public class NavigationController: UINavigationController {
-    public typealias VineType = Vine<NavigationController>
-    var vine: VineType?
+private enum AssociatedKeys {
+    static var vine: String = "vine_root_associated_key"
+}
 
-    // TODO: Figure out why without this will crash and figure out a work-around to make `vine` non-optional.
-    public override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
-        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
-    }
+///
+public protocol Root: AnyObject {
+    associatedtype VineType = Vine<Self>
+}
 
-    public init(vine: VineType, navigationBarClass: AnyClass? = nil, toolbarClass: AnyClass? = nil) {
-        super.init(navigationBarClass: navigationBarClass, toolbarClass: toolbarClass)
-        self.vine = vine
-        self.vine?.root = self
-        self.vine?.start()
-    }
-
-    public required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+public extension Root {
+    /// The Vine attached to this Root
+    ///
+    /// By setting this property, a strong reference is made to the vine, `vine.root` is set to `self`, and then `vine.start()` is called.
+    /// It is recommended that you only set this property once.
+    var vine: VineType? {
+        get {
+            return objc_getAssociatedObject(self, &AssociatedKeys.vine) as? VineType
+        }
+        set {
+            objc_setAssociatedObject(self, &AssociatedKeys.vine, newValue, objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN_NONATOMIC)
+            if let vine = vine as? Vine<Self> { // this will always be true
+                vine.root = self
+                vine.start()
+            }
+        }
     }
 }

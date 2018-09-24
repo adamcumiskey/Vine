@@ -1,23 +1,43 @@
 PODS:
-  - BlockDataSource (0.3.1)
-  - Vine (1.0.1)
+  - "NSObject+Rx (4.4.0)":
+    - RxSwift (~> 4.3)
+  - RxCocoa (4.3.1):
+    - RxSwift (~> 4.0)
+  - RxMapKit (1.2.0):
+    - RxCocoa (~> 4.2)
+    - RxSwift (~> 4.2)
+  - RxSwift (4.3.1)
+  - Sorcery (0.5.2)
+  - Vine (1.0.2)
 
 DEPENDENCIES:
-  - BlockDataSource
+  - "NSObject+Rx"
+  - RxCocoa
+  - RxMapKit
+  - RxSwift
+  - Sorcery
   - Vine (from `../`)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
-    - BlockDataSource
+    - "NSObject+Rx"
+    - RxCocoa
+    - RxMapKit
+    - RxSwift
+    - Sorcery
 
 EXTERNAL SOURCES:
   Vine:
     :path: "../"
 
 SPEC CHECKSUMS:
-  BlockDataSource: dc574489f355ec095a75024f93ef67938aa06a4a
-  Vine: 067837bc257512da9056ab2db58cea1ce26e82d7
+  "NSObject+Rx": 3291262e7eddc434b6c98d1e85dedc4faa451ace
+  RxCocoa: 78763c7b07d02455598d9fc3c1ad091a28b73635
+  RxMapKit: 5c8cc66f231fc8b75a2e58eb37f6c6420787585b
+  RxSwift: fe0fd770a43acdb7d0a53da411c9b892e69bb6e4
+  Sorcery: a52001e4df47cfa62c61644342a635b4576ec5a8
+  Vine: a25477a51d23d02d6cfe13d85d4ccb1caf265adb
 
-PODFILE CHECKSUM: baa2e27ef150df86adcf05e032db8506b0715182
+PODFILE CHECKSUM: ad31ea8beb5eb23ffb301f2ef0282dc9651dc815
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.5.2

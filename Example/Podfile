@@ -3,7 +3,11 @@ use_frameworks!
 target 'Vine_Example' do
   pod 'Vine', :path => '../'
 
-  pod 'BlockDataSource'
+  pod 'Sorcery'
+  pod 'NSObject+Rx'
+  pod 'RxSwift'
+  pod 'RxCocoa'
+  pod 'RxMapKit'
 
   target 'VineTests' do
     inherit! :search_paths

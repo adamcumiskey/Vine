@@ -18,26 +18,33 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //  THE SOFTWARE.
 //
-//  Window.swift
-//  Vine
+//  VineTests.swift
+//  VineTests
 //
-//  Created by Adam on 9/10/18.
+//  Created by Adam Cumiskey on 9/22/18.
+//  Copyright © 2018 CocoaPods. All rights reserved.
 //
 
-import UIKit
+import XCTest
+@testable import Vine
 
-public class Window: UIWindow {
-    /// Reference to the Vine
-    var vine: Vine<Window>
+let timeout = 0.1
 
-    public init(frame: CGRect, vine: Vine<Window>) {
-        self.vine = vine
-        super.init(frame: frame)
-        self.vine.root = self
-        self.vine.start()
+extension NSObject: Root {}
+
+class VineTests: XCTestCase {
+    func testVineShouldHaveReferenceToRootAfterBeingAssignedToRoot() {
+        let vine = Vine<NSObject>()
+        let object = NSObject()
+        object.vine = vine
+        XCTAssertEqual(vine.root, object)
     }
-
-    public required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+    
+    func testVineShouldStartAfterBeingAssignedToRoot() {
+        let expect = expectation(description: "starts the vine")
+        let vine = Vine<NSObject> { _ in expect.fulfill() }
+        let object = NSObject()
+        object.vine = vine
+        waitForExpectations(timeout: timeout) { _ in }
     }
 }
