@@ -30,18 +30,23 @@ private enum AssociatedKeys {
     static var vine: String = "vine_root_associated_key"
 }
 
+///
 public protocol Root: AnyObject {
     associatedtype VineType = Vine<Self>
 }
 
 public extension Root {
+    /// The Vine attached to this Root
+    ///
+    /// By setting this property, a strong reference is made to the vine, `vine.root` is set to `self`, and then `vine.start()` is called.
+    /// It is recommended that you only set this property once.
     var vine: VineType? {
         get {
             return objc_getAssociatedObject(self, &AssociatedKeys.vine) as? VineType
         }
         set {
             objc_setAssociatedObject(self, &AssociatedKeys.vine, newValue, objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN_NONATOMIC)
-            if let vine = vine as? Vine<Self> {
+            if let vine = vine as? Vine<Self> { // this will always be true
                 vine.root = self
                 vine.start()
             }

@@ -27,18 +27,62 @@
 
 import MapKit
 import UIKit
+import RxCocoa
+import RxSwift
+import NSObject_Rx
+import RxMapKit
 
-class MapViewController: UIViewController {
+final class MapViewController: UIViewController {
     @IBOutlet weak var mapView: MKMapView!
-    weak var vine: MapVineType?
-
+    @IBOutlet var longpress: UILongPressGestureRecognizer!
+    private var interactor: MapInteractor
+    init(interactor: MapInteractor) {
+        self.interactor = interactor
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    @available(*, unavailable)
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        mapView.addGestureRecognizer(longpress)
+        bind()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-
+    func bind() {
+        let input = MapInteractor.Input(
+            // Longpresses on the map
+            longpress: longpress.rx.event
+                .filter { $0.state == .began }
+                .map { [unowned self] gesture in
+                    let point = gesture.location(in: self.mapView)
+                    let coordinate = self.mapView.convert(point, toCoordinateFrom: self.mapView)
+                    return coordinate
+                }
+                .asObservable(),
+            // Annotation taps
+            selectPlacemark: mapView.rx.didSelectAnnotationView
+                .filter { return $0.annotation as? CLPlacemark != nil }
+                .map { $0.annotation as! CLPlacemark }
+                .asObservable()
+        )
+        let output = interactor.transform(input)
+        
+        // Disposables to hold on to
+        rx.disposeBag.insert(output.disposables)
+        
+        // New placemarks to add to the map
+        output.addPlacemarks
+            .subscribe { [weak self] event in
+                switch event {
+                case .next(let elements):
+                    self?.mapView.addAnnotations(elements)
+                default: break
+                }
+            }
+            .disposed(by: rx.disposeBag)
     }
 }
