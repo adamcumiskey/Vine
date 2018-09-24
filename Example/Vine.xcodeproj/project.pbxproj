@@ -12,6 +12,9 @@
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		665520042156AE5200D9FAC6 /* VineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665520032156AE5200D9FAC6 /* VineTests.swift */; };
 		6660841020D8A53300D14DB4 /* MapVine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6660840F20D8A53300D14DB4 /* MapVine.swift */; };
+		66779B3421587A3400CB9F35 /* MapInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66779B3321587A3400CB9F35 /* MapInteractor.swift */; };
+		66779B3721587AB900CB9F35 /* Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66779B3621587AB900CB9F35 /* Types.swift */; };
+		66779B3921587F4800CB9F35 /* CLGeocoder+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66779B3821587F4800CB9F35 /* CLGeocoder+Rx.swift */; };
 		6687984620D586750064F2BC /* NavigationVines.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6687984020D586740064F2BC /* NavigationVines.swift */; };
 		6687984820D586750064F2BC /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6687984220D586740064F2BC /* MapViewController.swift */; };
 		6687984B20D586750064F2BC /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6687984520D586750064F2BC /* MapViewController.xib */; };
@@ -34,6 +37,9 @@
 		666083F820D5B7AA00D14DB4 /* VineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		666083FC20D5B7AA00D14DB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6660840F20D8A53300D14DB4 /* MapVine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVine.swift; sourceTree = "<group>"; };
+		66779B3321587A3400CB9F35 /* MapInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapInteractor.swift; sourceTree = "<group>"; };
+		66779B3621587AB900CB9F35 /* Types.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Types.swift; sourceTree = "<group>"; };
+		66779B3821587F4800CB9F35 /* CLGeocoder+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CLGeocoder+Rx.swift"; sourceTree = "<group>"; };
 		6687984020D586740064F2BC /* NavigationVines.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationVines.swift; sourceTree = "<group>"; };
 		6687984220D586740064F2BC /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		6687984520D586750064F2BC /* MapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MapViewController.xib; sourceTree = "<group>"; };
@@ -91,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
+				66779B3521587AAC00CB9F35 /* Util */,
 				6660841820D8AF4500D14DB4 /* UI */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
 			);
@@ -136,11 +143,21 @@
 			name = UI;
 			sourceTree = "<group>";
 		};
+		66779B3521587AAC00CB9F35 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				66779B3621587AB900CB9F35 /* Types.swift */,
+				66779B3821587F4800CB9F35 /* CLGeocoder+Rx.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
 		6687984D20D586950064F2BC /* Map */ = {
 			isa = PBXGroup;
 			children = (
 				6660840F20D8A53300D14DB4 /* MapVine.swift */,
 				6687984220D586740064F2BC /* MapViewController.swift */,
+				66779B3321587A3400CB9F35 /* MapInteractor.swift */,
 				6687984520D586750064F2BC /* MapViewController.xib */,
 			);
 			name = Map;
@@ -315,11 +332,19 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Vine_Example/Pods-Vine_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/NSObject+Rx/NSObject_Rx.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxMapKit/RxMapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/Sorcery/Sorcery.framework",
 				"${BUILT_PRODUCTS_DIR}/Vine/Vine.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSObject_Rx.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxMapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Sorcery.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Vine.framework",
 			);
@@ -356,7 +381,10 @@
 				6687984620D586750064F2BC /* NavigationVines.swift in Sources */,
 				6660841020D8A53300D14DB4 /* MapVine.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				66779B3721587AB900CB9F35 /* Types.swift in Sources */,
+				66779B3421587A3400CB9F35 /* MapInteractor.swift in Sources */,
 				6687984820D586750064F2BC /* MapViewController.swift in Sources */,
+				66779B3921587F4800CB9F35 /* CLGeocoder+Rx.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

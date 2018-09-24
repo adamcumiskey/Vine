@@ -34,7 +34,8 @@ protocol MapVineType: class {
 
 class MapVine: Vine<UINavigationController>, MapVineType {
     override func start() {
-        let vc = MapViewController(nibName: nil, bundle: nil)
+        let interactor = MapInteractor()
+        let vc = MapViewController(interactor: interactor)
         vc.title = "Map"
         root?.viewControllers = [vc]
     }

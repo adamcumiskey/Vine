@@ -27,18 +27,62 @@
 
 import MapKit
 import UIKit
+import RxCocoa
+import RxSwift
+import NSObject_Rx
 
-class MapViewController: UIViewController {
+extension CLPlacemark: MKAnnotation {
+    public var coordinate: CLLocationCoordinate2D {
+        guard let location = location else { return CLLocationCoordinate2D(latitude: 0, longitude: 0) }
+        return location.coordinate
+    }
+    
+    public var title: String? { return name }
+    
+    public var subtitle: String? { return thoroughfare }
+}
+
+final class MapViewController: UIViewController {
     @IBOutlet weak var mapView: MKMapView!
-    weak var vine: MapVineType?
-
+    @IBOutlet var longpress: UILongPressGestureRecognizer!
+    private var interactor: MapInteractor
+    init(interactor: MapInteractor) {
+        self.interactor = interactor
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    @available(*, unavailable)
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        mapView.addGestureRecognizer(longpress)
+        bind()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-
+    func bind() {
+        let input = MapInteractor.Input(
+            longpress: longpress.rx.event
+                .filter { $0.state == .began }
+                .map { [unowned self] gesture in
+                    let point = gesture.location(in: self.mapView)
+                    let coordinate = self.mapView.convert(point, toCoordinateFrom: self.mapView)
+                    return coordinate
+                }
+                .asObservable()
+        )
+        let output = interactor.transform(input)
+        
+        output.addPlacemarks
+            .subscribe { [weak self] event in
+                switch event {
+                case .next(let elements):
+                    self?.mapView.addAnnotations(elements)
+                default: break
+                }
+            }
+            .disposed(by: rx.disposeBag)
     }
 }
