@@ -18,7 +18,7 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //  THE SOFTWARE.
 //
-//  AppVine.swift
+//  NavigationVines.swift
 //  VineExample
 //
 //  Created by Adam on 6/16/18.
@@ -32,14 +32,13 @@ extension Vine {
     /// Vine attached to the root window of the application
     class var app: Vine<UIWindow> {
         return Vine<UIWindow> { vine in
+            // Show a split view on iPad. Otherwise, show the menu.
             if UIDevice.current.userInterfaceIdiom == .pad {
-                let controller = UISplitViewController()
-                controller.vine = .ipad
+                let controller = UISplitViewController(vine: .ipad)
                 vine.root?.rootViewController = controller
                 vine.root?.makeKeyAndVisible()
             } else {
-                let controller = UITabBarController()
-                controller.vine = .mainMenu(embeddedInSplitView: false)
+                let controller = UITabBarController(vine: .mainMenu(embeddedInSplitView: false))
                 vine.root?.rootViewController = controller
                 vine.root?.makeKeyAndVisible()
             }
@@ -49,50 +48,37 @@ extension Vine {
     /// SplitView layout for iPad
     class var ipad: Vine<UISplitViewController> {
         return Vine<UISplitViewController> { vine in
-            let mapController = UINavigationController()
-            mapController.vine = .map
+            let mapController = UINavigationController(vine: .map)
             mapController.topViewController?.navigationItem.leftBarButtonItem = vine.root?.displayModeButtonItem
-            
-            let tabController = UITabBarController()
-            tabController.vine = .mainMenu(embeddedInSplitView: true)
-            
+            let tabController = UITabBarController(vine: .mainMenu(embeddedInSplitView: true))
             vine.root?.viewControllers = [tabController, mapController]
         }
     }
 
-    /// Main tab menu
+    /// Main menu
     class func mainMenu(embeddedInSplitView: Bool) -> Vine<UITabBarController> {
         return Vine<UITabBarController> { vine in
             var viewControllers = [UIViewController]()
             // Add the Map as a tab if we're not in a SplitView environment
             if !embeddedInSplitView {
-                let mapController = UINavigationController()
-                mapController.vine = .map
-                mapController.tabBarItem = UITabBarItem(title: "Map", image: nil, selectedImage: nil)
-                viewControllers.append(mapController)
+                let mapNavigationController = UINavigationController(vine: .map)
+                mapNavigationController.tabBarItem = UITabBarItem(title: "Map", image: nil, selectedImage: nil)
+                viewControllers.append(mapNavigationController)
             }
-            let contentController = UINavigationController()
-            contentController.vine = .locationList
-            contentController.tabBarItem = UITabBarItem(title: "Content", image: nil, selectedImage: nil)
-            viewControllers.append(contentController)
+            let locationListNavigationController = UINavigationController(vine: .locationList)
+            locationListNavigationController.tabBarItem = UITabBarItem(title: "Content", image: nil, selectedImage: nil)
+            viewControllers.append(locationListNavigationController)
             vine.root?.viewControllers = viewControllers
         }
     }
 
-    /// List in navigation controller
+    /// Location List
     class var locationList: Vine<UINavigationController> {
         return Vine<UINavigationController> { vine in
-            let controller = UITableViewController(style: .grouped)
-            vine.root?.viewControllers = [controller]
-        }
-    }
-
-    /// Map in navigation controller
-    class var map: MapVine {
-        return MapVine { vine in
-            let vc = MapViewController(nibName: nil, bundle: nil)
-            vc.title = "Map"
+            let vc = UITableViewController(style: .grouped)
             vine.root?.viewControllers = [vc]
         }
     }
+    
+    class var map: MapVine { return MapVine() }
 }

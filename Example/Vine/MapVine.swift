@@ -33,6 +33,12 @@ protocol MapVineType: class {
 }
 
 class MapVine: Vine<UINavigationController>, MapVineType {
+    override func start() {
+        let vc = MapViewController(nibName: nil, bundle: nil)
+        vc.title = "Map"
+        root?.viewControllers = [vc]
+    }
+    
     func showPlacemark(placemark: CLPlacemark) {
         
     }

@@ -26,7 +26,40 @@
 
 import UIKit
 
-extension UIWindow: Root {}
-extension UINavigationController: Root {}
-extension UISplitViewController: Root {}
-extension UITabBarController: Root {}
+extension UIWindow: Root {
+    /// Initialize a UIWindow with an attached Vine
+    public convenience init(vine: VineType, frame: CGRect = .zero) {
+        self.init(frame: frame)
+        self.vine = vine
+    }
+}
+
+extension UINavigationController: Root {
+    /// Initialize a UINavigationController with an attached Vine
+    public convenience init(vine: VineType, nibName: String? = nil, bundle: Bundle? = nil) {
+        self.init(nibName: nibName, bundle: bundle)
+        self.vine = vine
+    }
+    
+    /// Initialize a UINavigationController with an attached Vine
+    public convenience init(vine: VineType, navigationBarClass: AnyClass?, toolbarClass: AnyClass?) {
+        self.init(navigationBarClass: navigationBarClass, toolbarClass: toolbarClass)
+        self.vine = vine
+    }
+}
+
+extension UISplitViewController: Root {
+    /// Initialize a UISplitViewController with an attached Vine
+    public convenience init(vine: VineType, nibName: String? = nil, bundle: Bundle? = nil) {
+        self.init(nibName: nibName, bundle: bundle)
+        self.vine = vine
+    }
+}
+
+extension UITabBarController: Root {
+    /// Initialize a UITabBarController with an attached Vine
+    public convenience init(vine: VineType, nibName: String? = nil, bundle: Bundle? = nil) {
+        self.init(nibName: nibName, bundle: bundle)
+        self.vine = vine
+    }
+}
