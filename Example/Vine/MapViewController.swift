@@ -30,17 +30,7 @@ import UIKit
 import RxCocoa
 import RxSwift
 import NSObject_Rx
-
-extension CLPlacemark: MKAnnotation {
-    public var coordinate: CLLocationCoordinate2D {
-        guard let location = location else { return CLLocationCoordinate2D(latitude: 0, longitude: 0) }
-        return location.coordinate
-    }
-    
-    public var title: String? { return name }
-    
-    public var subtitle: String? { return thoroughfare }
-}
+import RxMapKit
 
 final class MapViewController: UIViewController {
     @IBOutlet weak var mapView: MKMapView!
@@ -64,6 +54,7 @@ final class MapViewController: UIViewController {
 
     func bind() {
         let input = MapInteractor.Input(
+            // Longpresses on the map
             longpress: longpress.rx.event
                 .filter { $0.state == .began }
                 .map { [unowned self] gesture in
@@ -71,10 +62,19 @@ final class MapViewController: UIViewController {
                     let coordinate = self.mapView.convert(point, toCoordinateFrom: self.mapView)
                     return coordinate
                 }
+                .asObservable(),
+            // Annotation taps
+            selectPlacemark: mapView.rx.didSelectAnnotationView
+                .filter { return $0.annotation as? CLPlacemark != nil }
+                .map { $0.annotation as! CLPlacemark }
                 .asObservable()
         )
         let output = interactor.transform(input)
         
+        // Disposables to hold on to
+        rx.disposeBag.insert(output.disposables)
+        
+        // New placemarks to add to the map
         output.addPlacemarks
             .subscribe { [weak self] event in
                 switch event {

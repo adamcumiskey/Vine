@@ -29,18 +29,26 @@ import MapKit
 import Vine
 
 protocol MapVineType: class {
-    func showPlacemark(placemark: CLPlacemark)
+    func showPlacemark(_ placemark: CLPlacemark)
 }
 
 class MapVine: Vine<UINavigationController>, MapVineType {
     override func start() {
         let interactor = MapInteractor()
+        interactor.vine = self
         let vc = MapViewController(interactor: interactor)
         vc.title = "Map"
         root?.viewControllers = [vc]
     }
     
-    func showPlacemark(placemark: CLPlacemark) {
-        
+    func showPlacemark(_ placemark: CLPlacemark) {
+        let vc = PlacemarkViewController(placemark: placemark)
+        vc.navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .cancel, target: self, action: #selector(dismissModal))
+        let nav = UINavigationController(rootViewController: vc)
+        root?.present(nav, animated: true, completion: nil)
+    }
+    
+    @objc func dismissModal() {
+        root?.dismiss(animated: true, completion: nil)
     }
 }
