@@ -30,14 +30,16 @@ import Vine
 
 extension Vine {
     /// Vine attached to the root window of the application
-    class var appVine: Vine<Window> {
-        return Vine<Window> { vine in
+    class var app: Vine<UIWindow> {
+        return Vine<UIWindow> { vine in
             if UIDevice.current.userInterfaceIdiom == .pad {
-                let controller = SplitViewController(vine: .ipadVine)
+                let controller = UISplitViewController()
+                controller.vine = .ipad
                 vine.root?.rootViewController = controller
                 vine.root?.makeKeyAndVisible()
             } else {
-                let controller = TabBarController(vine: .menuVine(embeddedInSplitView: false))
+                let controller = UITabBarController()
+                controller.vine = .mainMenu(embeddedInSplitView: false)
                 vine.root?.rootViewController = controller
                 vine.root?.makeKeyAndVisible()
             }
@@ -45,26 +47,32 @@ extension Vine {
     }
 
     /// SplitView layout for iPad
-    class var ipadVine: Vine<SplitViewController> {
-        return Vine<SplitViewController> { vine in
-            let mapController = NavigationController(vine: .mapVine)
+    class var ipad: Vine<UISplitViewController> {
+        return Vine<UISplitViewController> { vine in
+            let mapController = UINavigationController()
+            mapController.vine = .map
             mapController.topViewController?.navigationItem.leftBarButtonItem = vine.root?.displayModeButtonItem
-            let tabController = TabBarController(vine: .menuVine(embeddedInSplitView: true))
+            
+            let tabController = UITabBarController()
+            tabController.vine = .mainMenu(embeddedInSplitView: true)
+            
             vine.root?.viewControllers = [tabController, mapController]
         }
     }
 
     /// Main tab menu
-    class func menuVine(embeddedInSplitView: Bool) -> Vine<TabBarController> {
-        return Vine<TabBarController> { vine in
+    class func mainMenu(embeddedInSplitView: Bool) -> Vine<UITabBarController> {
+        return Vine<UITabBarController> { vine in
             var viewControllers = [UIViewController]()
             // Add the Map as a tab if we're not in a SplitView environment
             if !embeddedInSplitView {
-                let mapController = NavigationController(vine: .mapVine)
+                let mapController = UINavigationController()
+                mapController.vine = .map
                 mapController.tabBarItem = UITabBarItem(title: "Map", image: nil, selectedImage: nil)
                 viewControllers.append(mapController)
             }
-            let contentController = NavigationController(vine: .contentVine)
+            let contentController = UINavigationController()
+            contentController.vine = .locationList
             contentController.tabBarItem = UITabBarItem(title: "Content", image: nil, selectedImage: nil)
             viewControllers.append(contentController)
             vine.root?.viewControllers = viewControllers
@@ -72,27 +80,19 @@ extension Vine {
     }
 
     /// List in navigation controller
-    class var contentVine: Vine<NavigationController> {
-        return Vine<NavigationController> { vine in
-            let vc = LocationListViewController(style: .plain)
-            vc.title = "Locations"
-            vine.root?.viewControllers = [vc]
+    class var locationList: Vine<UINavigationController> {
+        return Vine<UINavigationController> { vine in
+            let controller = UITableViewController(style: .grouped)
+            vine.root?.viewControllers = [controller]
         }
     }
 
     /// Map in navigation controller
-    class var mapVine: MapVine {
+    class var map: MapVine {
         return MapVine { vine in
             let vc = MapViewController(nibName: nil, bundle: nil)
             vc.title = "Map"
             vine.root?.viewControllers = [vc]
-        }
-    }
-
-    class func placemarkVine(placemark: CLPlacemark) -> Vine<NavigationController> {
-        return Vine<NavigationController> { vine in
-            let controller = PlacemarkViewController(placemark: placemark)
-            vine.root?.viewControllers = [controller]
         }
     }
 }

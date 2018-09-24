@@ -18,31 +18,15 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //  THE SOFTWARE.
 //
-//  NavigationController.swift
+//  Vine+UIKit.swift
 //  Vine
 //
-//  Created by Adam on 9/10/18.
+//  Created by Adam Cumiskey on 9/22/18.
 //
 
 import UIKit
 
-public class NavigationController: UINavigationController {
-    public typealias VineType = Vine<NavigationController>
-    var vine: VineType?
-
-    // TODO: Figure out why without this will crash and figure out a work-around to make `vine` non-optional.
-    public override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
-        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
-    }
-
-    public init(vine: VineType, navigationBarClass: AnyClass? = nil, toolbarClass: AnyClass? = nil) {
-        super.init(navigationBarClass: navigationBarClass, toolbarClass: toolbarClass)
-        self.vine = vine
-        self.vine?.root = self
-        self.vine?.start()
-    }
-
-    public required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-}
+extension UIWindow: Root {}
+extension UINavigationController: Root {}
+extension UISplitViewController: Root {}
+extension UITabBarController: Root {}

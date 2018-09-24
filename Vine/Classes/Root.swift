@@ -18,26 +18,33 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //  THE SOFTWARE.
 //
-//  SplitViewController.swift
+//  Root.swift
 //  Vine
 //
-//  Created by Adam on 9/10/18.
+//  Created by Adam Cumiskey on 9/22/18.
 //
 
-import UIKit
+import Foundation
 
-public class SplitViewController: UISplitViewController {
-    public typealias VineType = Vine<SplitViewController>
-    var vine: VineType
+private enum AssociatedKeys {
+    static var vine: String = "vine_root_associated_key"
+}
 
-    public init(nibName nibNameOrNil: String? = nil, bundle nibBundleOrNil: Bundle? = nil, vine: VineType) {
-        self.vine = vine
-        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
-        self.vine.root = self
-        self.vine.start()
-    }
+public protocol Root: AnyObject {
+    associatedtype VineType = Vine<Self>
+}
 
-    public required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+public extension Root {
+    var vine: VineType? {
+        get {
+            return objc_getAssociatedObject(self, &AssociatedKeys.vine) as? VineType
+        }
+        set {
+            objc_setAssociatedObject(self, &AssociatedKeys.vine, newValue, objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN_NONATOMIC)
+            if let vine = vine as? Vine<Self> {
+                vine.root = self
+                vine.start()
+            }
+        }
     }
 }

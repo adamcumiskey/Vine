@@ -10,18 +10,11 @@
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
-		66078ACB2148A7CA004F85D6 /* WindowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66078ACA2148A7CA004F85D6 /* WindowTests.swift */; };
-		666083FB20D5B7AA00D14DB4 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 666083FA20D5B7AA00D14DB4 /* Constants.swift */; };
+		665520042156AE5200D9FAC6 /* VineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665520032156AE5200D9FAC6 /* VineTests.swift */; };
 		6660841020D8A53300D14DB4 /* MapVine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6660840F20D8A53300D14DB4 /* MapVine.swift */; };
-		6660841420D8A5C000D14DB4 /* PlacemarkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6660841220D8A5C000D14DB4 /* PlacemarkViewController.swift */; };
-		6660841520D8A5C000D14DB4 /* PlacemarkViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6660841320D8A5C000D14DB4 /* PlacemarkViewController.xib */; };
-		6660841720D8AD1300D14DB4 /* LocationListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6660841620D8AD1300D14DB4 /* LocationListViewController.swift */; };
 		6687984620D586750064F2BC /* Vines.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6687984020D586740064F2BC /* Vines.swift */; };
 		6687984820D586750064F2BC /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6687984220D586740064F2BC /* MapViewController.swift */; };
 		6687984B20D586750064F2BC /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6687984520D586750064F2BC /* MapViewController.xib */; };
-		66DE99CA2148A63E0020A59A /* NavigationControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DE99C92148A63E0020A59A /* NavigationControllerTests.swift */; };
-		66DE99CC2148A64D0020A59A /* SplitViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DE99CB2148A64D0020A59A /* SplitViewControllerTests.swift */; };
-		66DE99CE2148A65F0020A59A /* TabBarControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DE99CD2148A65E0020A59A /* TabBarControllerTests.swift */; };
 		C556DF6BA8A979D5CB78D143 /* Pods_VineTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 160BEFAA403B7B716A95372B /* Pods_VineTests.framework */; };
 		DCF8C3E410B41D54E43F3D33 /* Pods_Vine_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DAD88CF2051F47642893CA7 /* Pods_Vine_Example.framework */; };
 /* End PBXBuildFile section */
@@ -37,20 +30,13 @@
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		66078ACA2148A7CA004F85D6 /* WindowTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WindowTests.swift; sourceTree = "<group>"; };
+		665520032156AE5200D9FAC6 /* VineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VineTests.swift; sourceTree = "<group>"; };
 		666083F820D5B7AA00D14DB4 /* VineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		666083FA20D5B7AA00D14DB4 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		666083FC20D5B7AA00D14DB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6660840F20D8A53300D14DB4 /* MapVine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVine.swift; sourceTree = "<group>"; };
-		6660841220D8A5C000D14DB4 /* PlacemarkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacemarkViewController.swift; sourceTree = "<group>"; };
-		6660841320D8A5C000D14DB4 /* PlacemarkViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlacemarkViewController.xib; sourceTree = "<group>"; };
-		6660841620D8AD1300D14DB4 /* LocationListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationListViewController.swift; sourceTree = "<group>"; };
 		6687984020D586740064F2BC /* Vines.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vines.swift; sourceTree = "<group>"; };
 		6687984220D586740064F2BC /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		6687984520D586750064F2BC /* MapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MapViewController.xib; sourceTree = "<group>"; };
-		66DE99C92148A63E0020A59A /* NavigationControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationControllerTests.swift; sourceTree = "<group>"; };
-		66DE99CB2148A64D0020A59A /* SplitViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitViewControllerTests.swift; sourceTree = "<group>"; };
-		66DE99CD2148A65E0020A59A /* TabBarControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarControllerTests.swift; sourceTree = "<group>"; };
 		6DAD88CF2051F47642893CA7 /* Pods_Vine_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Vine_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		79FDA6B8D78CF915DFF83BBB /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		8501F96DA26B6435C3C5E02E /* Pods-Vine_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vine_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-Vine_Example/Pods-Vine_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -132,42 +118,19 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
-		666083E120D5957100D14DB4 /* Location List */ = {
-			isa = PBXGroup;
-			children = (
-				6660841620D8AD1300D14DB4 /* LocationListViewController.swift */,
-			);
-			name = "Location List";
-			sourceTree = "<group>";
-		};
 		666083F920D5B7AA00D14DB4 /* VineTests */ = {
 			isa = PBXGroup;
 			children = (
-				666083FA20D5B7AA00D14DB4 /* Constants.swift */,
-				66DE99C92148A63E0020A59A /* NavigationControllerTests.swift */,
-				66DE99CB2148A64D0020A59A /* SplitViewControllerTests.swift */,
-				66DE99CD2148A65E0020A59A /* TabBarControllerTests.swift */,
-				66078ACA2148A7CA004F85D6 /* WindowTests.swift */,
+				665520032156AE5200D9FAC6 /* VineTests.swift */,
 				666083FC20D5B7AA00D14DB4 /* Info.plist */,
 			);
 			path = VineTests;
-			sourceTree = "<group>";
-		};
-		6660841120D8A5AB00D14DB4 /* Placemark */ = {
-			isa = PBXGroup;
-			children = (
-				6660841220D8A5C000D14DB4 /* PlacemarkViewController.swift */,
-				6660841320D8A5C000D14DB4 /* PlacemarkViewController.xib */,
-			);
-			name = Placemark;
 			sourceTree = "<group>";
 		};
 		6660841820D8AF4500D14DB4 /* UI */ = {
 			isa = PBXGroup;
 			children = (
 				6687984020D586740064F2BC /* Vines.swift */,
-				666083E120D5957100D14DB4 /* Location List */,
-				6660841120D8A5AB00D14DB4 /* Placemark */,
 				6687984D20D586950064F2BC /* Map */,
 			);
 			name = UI;
@@ -296,7 +259,6 @@
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				6687984B20D586750064F2BC /* MapViewController.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
-				6660841520D8A5C000D14DB4 /* PlacemarkViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -353,12 +315,12 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Vine_Example/Pods-Vine_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/BlockDataSource/BlockDataSource.framework",
+				"${BUILT_PRODUCTS_DIR}/Sorcery/Sorcery.framework",
 				"${BUILT_PRODUCTS_DIR}/Vine/Vine.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BlockDataSource.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Sorcery.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Vine.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -392,10 +354,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				6687984620D586750064F2BC /* Vines.swift in Sources */,
-				6660841420D8A5C000D14DB4 /* PlacemarkViewController.swift in Sources */,
 				6660841020D8A53300D14DB4 /* MapVine.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
-				6660841720D8AD1300D14DB4 /* LocationListViewController.swift in Sources */,
 				6687984820D586750064F2BC /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -404,11 +364,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				66DE99CE2148A65F0020A59A /* TabBarControllerTests.swift in Sources */,
-				666083FB20D5B7AA00D14DB4 /* Constants.swift in Sources */,
-				66DE99CA2148A63E0020A59A /* NavigationControllerTests.swift in Sources */,
-				66DE99CC2148A64D0020A59A /* SplitViewControllerTests.swift in Sources */,
-				66078ACB2148A7CA004F85D6 /* WindowTests.swift in Sources */,
+				665520042156AE5200D9FAC6 /* VineTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -471,7 +427,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -517,7 +473,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";

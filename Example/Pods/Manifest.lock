@@ -1,23 +1,23 @@
 PODS:
-  - BlockDataSource (0.3.1)
-  - Vine (1.0.1)
+  - Sorcery (0.5.2)
+  - Vine (1.0.2)
 
 DEPENDENCIES:
-  - BlockDataSource
+  - Sorcery
   - Vine (from `../`)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
-    - BlockDataSource
+    - Sorcery
 
 EXTERNAL SOURCES:
   Vine:
     :path: "../"
 
 SPEC CHECKSUMS:
-  BlockDataSource: dc574489f355ec095a75024f93ef67938aa06a4a
-  Vine: 067837bc257512da9056ab2db58cea1ce26e82d7
+  Sorcery: a52001e4df47cfa62c61644342a635b4576ec5a8
+  Vine: a25477a51d23d02d6cfe13d85d4ccb1caf265adb
 
-PODFILE CHECKSUM: baa2e27ef150df86adcf05e032db8506b0715182
+PODFILE CHECKSUM: 6ffd595ef5919c7e58c962dda6a5b6776f02bd4b
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.5.2

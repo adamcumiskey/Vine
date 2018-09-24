@@ -143,11 +143,11 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "${BUILT_PRODUCTS_DIR}/BlockDataSource/BlockDataSource.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Sorcery/Sorcery.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Vine/Vine.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "${BUILT_PRODUCTS_DIR}/BlockDataSource/BlockDataSource.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Sorcery/Sorcery.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Vine/Vine.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then

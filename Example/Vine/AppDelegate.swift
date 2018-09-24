@@ -19,7 +19,7 @@
 //  THE SOFTWARE.
 //
 //  AppDelegate.swift
-//  Vine
+//  VineExample
 //
 //  Created by Adam on 06/16/2018.
 //  Copyright (c) 2018 Adam. All rights reserved.
@@ -31,10 +31,11 @@ import Vine
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-    var window: Window?
+    var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        self.window = Window(frame: UIScreen.main.bounds, vine: .appVine)
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        self.window?.vine = .app
         return true
     }
 }
