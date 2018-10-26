@@ -30,7 +30,7 @@ private enum AssociatedKeys {
     static var vine: String = "vine_root_associated_key"
 }
 
-///
+/// Objects conforming to this protocol gain a `vine` property which can be used to attach and start a Vine.
 public protocol Root: AnyObject {
     associatedtype VineType = Vine<Self>
 }

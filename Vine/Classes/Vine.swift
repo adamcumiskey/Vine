@@ -51,6 +51,8 @@ open class Vine<Root: AnyObject> {
     /// When subclassing this method, `super` should be called at the very beginning of this function.
     open func start() {
         startFunction?(self)
+        // Set the startFunction to nil to avoid unnecessary retains
+        startFunction = nil
     }
 }
 
